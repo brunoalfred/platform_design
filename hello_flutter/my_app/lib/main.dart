@@ -6,11 +6,6 @@ void main() => runApp(MaterialApp(
           title: Text("My first App"),
           centerTitle: true,
         ),
-        body: Center(
-          child: Text("Hello Bruno"),
-        ),
-        floatingActionButton: FloatingActionButton(
-          child: Text("click"),
-        ),
+        body: Center(child: Text("Hello Bruno"),)
       ),
     ));
