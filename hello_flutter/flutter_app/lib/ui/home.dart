@@ -7,6 +7,14 @@ class Home extends StatelessWidget {
     return new Container(
       alignment: Alignment.center,
       color: Colors.teal,
+      child: new Column(
+        children: <Widget>[
+          new Text(
+            "Welcom",
+            textDirection: TextDirection.ltr,style: ,
+          )
+        ],
+      ),
     );
   }
 }
