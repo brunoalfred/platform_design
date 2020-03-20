@@ -9,9 +9,16 @@ class Home extends StatelessWidget {
       color: Colors.teal,
       child: new Column(
         children: <Widget>[
-          new Text(
-            "Welcom",
-            textDirection: TextDirection.ltr,style: ,
+          new Container(
+            child: new Text(
+              "Welcome",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(
+                color: Colors.blueAccent,
+                fontSize: 20.0,
+                fontWeight: FontWeight.normal,
+              ),
+            ),
           )
         ],
       ),
