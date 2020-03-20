@@ -5,43 +5,64 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Container(
-      color: Colors.greenAccent,
       alignment: Alignment.center,
+      color: Colors.greenAccent,
       child: new Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           new Text(
-            "Hello Container",
-            textDirection: TextDirection.ltr,
-            style: new TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0),
-          ),
-          new Text(
             "Welcome",
-            textDirection: TextDirection.rtl,
+            textDirection: TextDirection.ltr,
             style: TextStyle(
-                color: Colors.cyan,
-                fontWeight: FontWeight.bold,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0),
-          ),
-          new Container(
-            alignment: Alignment.center,
-            child: new Text(
-              "Me",
-              textDirection: TextDirection.ltr,
-              style: TextStyle(
-                fontSize: 25.0,
-                fontStyle: FontStyle.normal,
-                fontWeight: FontWeight.bold,
-                color: Colors.blueAccent,
-              ),
+              color: Colors.blue,
+              fontStyle: FontStyle.normal,
+              fontWeight: FontWeight.w500,
+              fontSize: 20.0,
             ),
           ),
+              fontStyle: FontStyle.normal,
+              fontWeight: FontWeight.w500,
+              fontSize: 20.0,
+            ),
+          ),
+          new Text(
+            "Classes",
+            textDirection: TextDirection.ltr,
+            style: TextStyle(
+              color: Colors.blue,
+              fontStyle: FontStyle.normal,
+              fontWeight: FontWeight.w500,
+              fontSize: 20.0,
+            ),
+          ),
+          new Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new Text(
+                "columns",
+                textDirection: TextDirection.ltr,
+                style: TextStyle(
+                  fontSize: 18.0,
+                  fontStyle: FontStyle.normal,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              new Text(
+                "rows",
+                textDirection: TextDirection.ltr,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18.0,
+                  fontStyle: FontStyle.normal,
+
+                ),
+              )
+            ],
+          )
+          
         ],
+
       ),
     );
   }
