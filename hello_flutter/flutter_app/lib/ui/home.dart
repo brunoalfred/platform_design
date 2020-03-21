@@ -1,20 +1,25 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return _HomeState();
+  }
+}
+
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amber,
         title: Text(
-          "Hello Flutter",
+          "Add Items",
           textDirection: TextDirection.ltr,
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 20.0,
-          ),
+          style: TextStyle(color: ),
         ),
+        backgroundColor: Colors.greenAccent,
       ),
     );
   }
