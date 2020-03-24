@@ -65,11 +65,12 @@ flutter:
   
     - family: Baloon Da 2
       fonts:
-        - asset: fonts/Baloo_Da_2/BalooDa2-EtraBold.ttf
+        - asset: fonts/Baloo_Da_2/BalooDa2-ExtraBold.ttf
           weight: 800
-        - asset: fonts/Baloo_Da_2/BaloonDa2-Bold.ttf
+        - asset: fonts/Baloo_Da_2/BalooDa2-Bold.ttf
           weight: 700
-
+          
+          
     - family: Roboto
       fonts:
         - asset: fonts/Roboto/Roboto-MediumItalic.ttf
