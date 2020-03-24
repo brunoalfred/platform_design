@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
       body: new Center(
         child: RaisedButton.icon(
           onPressed: () {
-            print("you email is sent!");
+            responce(context);
           },
           icon: Icon(Icons.mail),
           label: Text("mail me!"),
@@ -33,5 +33,17 @@ class Home extends StatelessWidget {
         ),
       ),
     );
+    void responce(BuildContext context) {
+      var alertDialog = AlertDialog(
+        title: Text("Sent !"),
+        content: Text("Enjoy"),
+      );
+
+      showDialog(
+          context: context,
+          builder: (BuildContext) {
+            return alertDialog;
+          });
+    }
   }
 }
