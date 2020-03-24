@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './ui/home.dart';
 
 void main() => runApp(MaterialApp(
-      // title: Text("My First App"),
+      debugShowCheckedModeBanner: false,
+      title: "My First App",
       home: Home(),
     ));

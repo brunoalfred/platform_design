@@ -15,8 +15,8 @@ class Home extends StatelessWidget {
             style: TextStyle(
               color: Colors.green,
               fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              fontStyle: FontStyle.normal,
+              fontFamily: "Baloo Da 2",
+              fontWeight: FontWeight.w800,
             ),
           ),
         ),
