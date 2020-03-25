@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -24,6 +22,7 @@ class Home extends StatelessWidget {
           ),
         ),
         body: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new Center(
               child: new Text(
@@ -47,7 +46,7 @@ class HelloButton extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Container(
-      margin: EdgeInsets.only(top: 50.0),
+      margin: EdgeInsets.only(top: 10.0),
       alignment: Alignment.center,
       child: new RaisedButton.icon(
         onPressed: () {
@@ -67,11 +66,19 @@ class HelloButton extends StatelessWidget {
 
 void enjoyButton(BuildContext context) {
   var alertDialog = new AlertDialog(
-    content: Text("Woow"),
-    title: Text("loved"),
+    content: Text(
+      "Woow",
+      textAlign: TextAlign.center,
+    ),
+    title: Text(
+      "You clicked Me",
+      textAlign: TextAlign.center,
+    ),
   );
 
-  showDialog(context: context, builder: (BuildContext context) {
-    return alertDialog;
-  });
+  showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return alertDialog;
+      });
 }
