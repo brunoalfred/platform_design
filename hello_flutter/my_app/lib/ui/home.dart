@@ -22,28 +22,15 @@ class Home extends StatelessWidget {
         ),
       ),
       body: new Center(
-        child: RaisedButton.icon(
-          onPressed: () {
-            responce(context);
-          },
-          icon: Icon(Icons.mail),
-          label: Text("mail me!"),
-          autofocus: true,
-          color: Colors.cyan,
+        child: new Text(
+          "Hello !",
+          style: TextStyle(
+              color: Colors.green,
+              fontFamily: "Roboto",
+              fontWeight: FontWeight.w500,
+              fontSize: 20.0),
         ),
       ),
     );
-    void responce(BuildContext context) {
-      var alertDialog = AlertDialog(
-        title: Text("Sent !"),
-        content: Text("Enjoy"),
-      );
-
-      showDialog(
-          context: context,
-          builder: (BuildContext) {
-            return alertDialog;
-          });
-    }
   }
 }
