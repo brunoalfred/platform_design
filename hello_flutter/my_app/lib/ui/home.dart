@@ -70,5 +70,7 @@ void enjoyButton(BuildContext context) {
     title: Text("loved"),
   );
 
-  showDialog(context: context, builder: (BuildContext context))
+  showDialog(context: context, builder: (BuildContext context) {
+    return alertDialog;
+  });
 }
