@@ -46,7 +46,7 @@ class HelloButton extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Container(
-      margin: EdgeInsets.only(top: 10.0),
+      margin: EdgeInsets.only(top: 50.0),
       alignment: Alignment.center,
       child: new RaisedButton.icon(
         onPressed: () {
