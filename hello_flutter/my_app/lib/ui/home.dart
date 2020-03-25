@@ -31,6 +31,26 @@ class Home extends StatelessWidget {
               fontSize: 20.0),
         ),
       ),
+      HelloButton();
+    );
+  }
+}
+
+class HelloButton extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new Container(
+      alignment: Alignment.center,
+      child: new RaisedButton.icon(
+        onPressed: () {},
+        icon: Icon(
+          Icons.favorite,
+          color: Colors.red,
+          size: 20.0,
+        ),
+        elevation: 6.0,
+      ),
     );
   }
 }
