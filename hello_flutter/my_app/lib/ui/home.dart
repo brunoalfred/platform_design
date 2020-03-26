@@ -9,6 +9,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  var userName = "";
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -46,10 +48,14 @@ class _HomeState extends State<Home> {
               ),
             ),
             new Container(
+              width: 200,
               child: TextField(
-                autocorrect: true,
                 autofocus: true,
-                onSubmitted: (String userInput) {},
+                onSubmitted: (String userInput) {
+                  setState(() {
+                    userName = userInput;
+                  });
+                },
               ),
             ),
           ],
