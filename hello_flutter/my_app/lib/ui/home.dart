@@ -1,86 +1,78 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return _HomeState();
+  }
+}
+
+class _HomeState extends State<Home> {
+  var userPassword = "";
+  var userName = "";
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-        backgroundColor: Colors.lightBlue,
-        appBar: AppBar(
-          backgroundColor: Colors.greenAccent,
-          title: new Center(
-            child: new Text(
-              "welcome",
-              textDirection: TextDirection.ltr,
-              style: TextStyle(
-                color: Colors.green,
-                fontSize: 20.0,
-                fontFamily: "Roboto",
-                fontWeight: FontWeight.w500,
-              ),
+      appBar: AppBar(
+        elevation: 20.0,
+        backgroundColor: Colors.blueAccent,
+        title: new Center(
+          child: Text(
+            "click Me",
+            overflow: TextOverflow.fade,
+            style: TextStyle(
+              color: Colors.white,
             ),
           ),
         ),
-        body: new Column(
+        brightness: Brightness.dark,
+      ),
+      body: new Container(
+        alignment: Alignment.center,
+        child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            new Center(
+            new Container(
               child: new Text(
-                "Hello!!!",
+                "welcome",
+                textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: Colors.green,
-                  fontFamily: "Roboto",
-                  fontWeight: FontWeight.w500,
-                  fontSize: 20.0,
+                  color: Colors.blueAccent,
+                  fontSize: 30.0,
+                  fontFamily: 'Roboto',
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.w800,
                 ),
               ),
             ),
-            HelloButton(),
+            new Container(
+              width: 200,
+              child: TextField(
+                autofocus: true,
+                onSubmitted: (String userInput) {
+                  setState(() {
+                    userName = userInput;
+                  });
+                },
+              ),
+            ),
+            new Container(
+              width: 200,
+              child: new TextField(
+                autofocus: true,
+                onSubmitted: (String userInput) {
+                  setState(() {
+                    userPassword = userInput;
+                  });
+                },
+              ),
+            ),
           ],
-        ));
-  }
-}
-
-class HelloButton extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return new Container(
-      margin: EdgeInsets.only(top: 50.0),
-      width: 250.0,
-      height: 50.0,
-      alignment: Alignment.center,
-      child: new RaisedButton.icon(
-        onPressed: () {
-          enjoyButton(context);
-        },
-        icon: Icon(
-          Icons.favorite,
-          color: Colors.red,
-          size: 20.0,
         ),
-        elevation: 6.0,
-        label: Text("hello"),
       ),
     );
   }
-}
-
-void enjoyButton(BuildContext context) {
-  var alertDialog = new AlertDialog(
-    content: Text(
-      "Woow",
-      textAlign: TextAlign.center,
-    ),
-    title: Text(
-      "You clicked Me",
-      textAlign: TextAlign.center,
-    ),
-  );
-
-  showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return alertDialog;
-      });
 }
