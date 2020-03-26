@@ -5,82 +5,20 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-        backgroundColor: Colors.lightBlue,
-        appBar: AppBar(
-          backgroundColor: Colors.greenAccent,
-          title: new Center(
-            child: new Text(
-              "welcome",
-              textDirection: TextDirection.ltr,
-              style: TextStyle(
-                color: Colors.green,
-                fontSize: 20.0,
-                fontFamily: "Roboto",
-                fontWeight: FontWeight.w500,
-              ),
-            ),
+      appBar: AppBar(
+        backgroundColor: Colors.blueAccent,
+        title: Text(
+          "Push Button",
+          style: TextStyle(
+            fontFamily: "Roboto",
+            fontSize: 20.0,
+            fontWeight: FontWeight.w500,
+            color: Colors.amber,
           ),
+          textAlign: TextAlign.center,
+          textDirection: TextDirection.ltr,
         ),
-        body: new Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            new Center(
-              child: new Text(
-                "Hello!!!",
-                style: TextStyle(
-                  color: Colors.green,
-                  fontFamily: "Roboto",
-                  fontWeight: FontWeight.w500,
-                  fontSize: 20.0,
-                ),
-              ),
-            ),
-            HelloButton(),
-          ],
-        ));
-  }
-}
-
-class HelloButton extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return new Container(
-      margin: EdgeInsets.only(top: 50.0),
-      width: 250.0,
-      height: 50.0,
-      alignment: Alignment.center,
-      child: new RaisedButton.icon(
-        onPressed: () {
-          enjoyButton(context);
-        },
-        icon: Icon(
-          Icons.favorite,
-          color: Colors.red,
-          size: 20.0,
-        ),
-        elevation: 6.0,
-        label: Text("hello"),
       ),
     );
   }
-}
-
-void enjoyButton(BuildContext context) {
-  var alertDialog = new AlertDialog(
-    content: Text(
-      "Woow",
-      textAlign: TextAlign.center,
-    ),
-    title: Text(
-      "You clicked Me",
-      textAlign: TextAlign.center,
-    ),
-  );
-
-  showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return alertDialog;
-      });
 }
