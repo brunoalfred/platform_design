@@ -36,7 +36,13 @@ class _HomeState extends State<Home> {
               child: new Text(
                 "Welcome",
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.blueAccent, fontSize: 30.0, fontFamily: ''),
+                style: TextStyle(
+                  color: Colors.blueAccent,
+                  fontSize: 30.0,
+                  fontFamily: 'Roboto',
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.w800,
+                ),
               ),
             ),
           ],
