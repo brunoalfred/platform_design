@@ -19,6 +19,25 @@ class Home extends StatelessWidget {
           textDirection: TextDirection.ltr,
         ),
       ),
+      body: new Container(
+        alignment: Alignment.center,
+        color: Colors.white70,
+        child: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            new Container(
+              alignment: Alignment.center,
+              child: Text(
+                "welcom",
+                textDirection: TextDirection.ltr,
+                style: TextStyle(
+                  color: Colors.blueAccent,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
