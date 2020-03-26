@@ -40,7 +40,8 @@ class Home extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                 ),
               ),
-            )
+            ),
+            new Container(),
           ],
         ),
       ),
