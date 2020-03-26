@@ -80,6 +80,7 @@ class _HomeState extends State<Home> {
               }).toList(),
               onChanged: (String newValueSelected) {
                 // code  to be executed
+                _onDropDownItemSelected(newValueSelected);
               },
               value: _currentItemSelected,
             ),
