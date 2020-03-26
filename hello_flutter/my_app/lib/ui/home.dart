@@ -45,6 +45,13 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
+            new Container(
+              child: TextField(
+                autocorrect: true,
+                autofocus: true,
+                onSubmitted: (String userInput) {},
+              ),
+            ),
           ],
         ),
       ),
