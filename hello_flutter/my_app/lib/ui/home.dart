@@ -13,9 +13,9 @@ class Home extends StatelessWidget {
             fontFamily: "Roboto",
             fontSize: 20.0,
             fontWeight: FontWeight.w500,
-            color: Colors.amber,
+            color: Colors.white,
           ),
-          textAlign: TextAlign.center,
+          textAlign: TextAlign.right,
           textDirection: TextDirection.ltr,
         ),
       ),
@@ -27,11 +27,17 @@ class Home extends StatelessWidget {
           children: <Widget>[
             new Container(
               alignment: Alignment.center,
+              width: 390.0,
+              height: 70.0,
               child: Text(
-                "welcom",
+                "welcome",
                 textDirection: TextDirection.ltr,
                 style: TextStyle(
                   color: Colors.blueAccent,
+                  fontSize: 40.0,
+                  fontFamily: 'Baloon Da 2',
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
             )
