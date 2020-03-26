@@ -9,6 +9,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  var userPassword = "";
   var userName = "";
 
   @override
@@ -36,7 +37,7 @@ class _HomeState extends State<Home> {
           children: <Widget>[
             new Container(
               child: new Text(
-                "Welcome",
+                "welcome",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.blueAccent,
@@ -50,11 +51,21 @@ class _HomeState extends State<Home> {
             new Container(
               width: 200,
               child: TextField(
-                
                 autofocus: true,
                 onSubmitted: (String userInput) {
                   setState(() {
                     userName = userInput;
+                  });
+                },
+              ),
+            ),
+            new Container(
+              width: 200,
+              child: new TextField(
+                autofocus: true,
+                onSubmitted: (String userInput) {
+                  setState(() {
+                    userPassword = userInput;
                   });
                 },
               ),
