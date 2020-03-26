@@ -11,7 +11,8 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   var userPassword = "";
   var userName = "";
-
+  var _options = ['Sing Up', "Log In"];
+  var _currentItemSelected = 'Sing Up';
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -70,9 +71,27 @@ class _HomeState extends State<Home> {
                 },
               ),
             ),
+            DropdownButton<String>(
+              items: _options.map((String dropDownStringItem) {
+                return DropdownMenuItem<String>(
+                  value: dropDownStringItem,
+                  child: Text(dropDownStringItem),
+                );
+              }).toList(),
+              onChanged: (String newValueSelected) {
+                // code  to be executed
+              },
+              value: _currentItemSelected,
+            ),
           ],
         ),
       ),
     );
+  }
+
+  void _onDropDownItemSelected(String newValueSelected) {
+    setState(() {
+      this._currentItemSelected = newValueSelected;
+    });
   }
 }
