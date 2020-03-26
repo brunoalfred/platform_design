@@ -5,5 +5,5 @@ import './ui/home.dart';
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "My First App",
-      home: Home(),
+      home: _Home(),
     ));
