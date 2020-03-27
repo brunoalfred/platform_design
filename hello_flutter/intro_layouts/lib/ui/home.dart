@@ -19,6 +19,10 @@ class HomeState extends State<Home> {
           child: new Text("Add Value"),
         ),
       ),
+      body: new Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[],
+      ),
     );
   }
 }
