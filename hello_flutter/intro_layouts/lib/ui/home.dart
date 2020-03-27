@@ -14,7 +14,10 @@ class HomeState extends State<Home> {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: new Text("Add Value"),
+        title: new Container(
+          alignment: Alignment.center,
+          child: new Text("Add Value"),
+        ),
       ),
     );
   }
