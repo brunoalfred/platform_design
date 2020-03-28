@@ -14,6 +14,7 @@ class _HomeState extends State<Home> {
     // TODO: implement build
     return Scaffold(
       appBar: new AppBar(
+        backgroundColor: Colors.blueAccent,
         title: new Center(
           child: new Container(
             child: new Text(
@@ -22,7 +23,8 @@ class _HomeState extends State<Home> {
               style: TextStyle(
                 color: Colors.white,
                 fontFamily: 'Liu Jian Mao Cao',
-                fontWeight: FontWeight.w400,
+                fontWeight: FontWeight.w800,
+                fontSize: 30.0,
               ),
             ),
           ),
