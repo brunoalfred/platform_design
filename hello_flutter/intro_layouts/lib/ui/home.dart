@@ -69,8 +69,8 @@ class _HomeState extends State<Home> {
                       fontSize: 28.0,
                     ),
                   ),
-                  padding: EdgeInsets.all(0.0),
-                  decoration: new BoxDecoration(
+                  padding: const EdgeInsets.all(0.0),
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       colors: <Color>[
                         Color(0xFF536DFE),
@@ -81,7 +81,7 @@ class _HomeState extends State<Home> {
                   ),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
