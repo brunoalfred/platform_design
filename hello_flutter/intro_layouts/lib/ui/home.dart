@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -11,11 +9,23 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  var count = 0;
+  List<String> options = [
+    'enjoy',
+    'The',
+    'Awesome',
+    'features',
+    'Of',
+    'Flutter'
+  ];
+  var _toDisplay = "";
 
-  List<String> options = []
-
-
-
+  _onPress() {
+    setState(() {
+      _toDisplay = options[count];
+      count = count + 1;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -38,18 +48,38 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
-      body: new Container(
+      body: new Center(
         child: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new Container(
               child: new Text(
-                "_toDisplay",
+                "$_toDisplay",
               ),
             ),
             new Container(
-              child: RaisedButton.icon(
+              child: RaisedButton(
                 onPressed: _onPress,
-                icon: Icon(Icons.find_in_page),
+                textColor: Colors.white,
+                child: new Container(
+                  child: new Text(
+                    "push",
+                    style: TextStyle(
+                      fontFamily: 'Liu Jian Mao Cao',
+                      fontSize: 28.0,
+                    ),
+                  ),
+                  padding: EdgeInsets.only(left: 10.0,)
+                  decoration: new BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: <Color>[
+                        Color(0xFF536DFE),
+                        Color(0xFF3D5AFE),
+                        Color(0xFF304FFE),
+                      ],
+                    ),
+                  ),
+                ),
               ),
             )
           ],
