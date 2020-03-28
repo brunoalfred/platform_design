@@ -8,5 +8,5 @@ import'packages:flutter/../../..'
 void main () => runApp()
 
 ```
-                            :fire::fire::fire::fire::fire::fire::fire::fire::fire::fire::fire:
+                            :fire:
     1. hello flutter
