@@ -51,30 +51,18 @@ flutter:
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
 
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
   fonts:
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
-  
-    - family: Baloon Da 2
-      fonts:
-        - asset: fonts/Baloo_Da_2/BalooDa2-ExtraBold.ttf
-          weight: 800
-        - asset: fonts/Baloo_Da_2/BalooDa2-Bold.ttf
-          weight: 700
-          
-          
-    - family: Roboto
-      fonts:
-        - asset: fonts/Roboto/Roboto-MediumItalic.ttf
-          weight: 500
+      - family: Gotu
+        fonts:
+          - asset: fonts/Gotu-Regular.ttf
+            
+            weight: 400
+    
   
 
   # For details regarding fonts from package dependencies,
