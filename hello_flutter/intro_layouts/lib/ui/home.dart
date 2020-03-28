@@ -21,6 +21,8 @@ class _HomeState extends State<Home> {
               textDirection: TextDirection.ltr,
               style: TextStyle(
                 color: Colors.white,
+                fontFamily: 'Liu Jian Mao Cao',
+                fontWeight: FontWeight.w400,
               ),
             ),
           ),
