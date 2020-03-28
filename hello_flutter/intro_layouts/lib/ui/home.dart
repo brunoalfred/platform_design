@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -9,6 +11,12 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  List<String> options = []
+
+
+
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -28,6 +36,23 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
+        ),
+      ),
+      body: new Container(
+        child: new Column(
+          children: <Widget>[
+            new Container(
+              child: new Text(
+                "_toDisplay",
+              ),
+            ),
+            new Container(
+              child: RaisedButton.icon(
+                onPressed: _onPress,
+                icon: Icon(Icons.find_in_page),
+              ),
+            )
+          ],
         ),
       ),
     );
