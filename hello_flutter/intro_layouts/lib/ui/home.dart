@@ -30,22 +30,27 @@ class NoteListState extends State<NoteList> {
       body: new Center(
         child: new Center(
           child: ListView.separated(
-              itemBuilder: (_, index) {
-                return ListTile(
-                    title: Text(
+            itemBuilder: (_, index) {
+              return ListTile(
+                title: Text(
                   'Halla',
                   style: TextStyle(
                     fontFamily: 'Liu Jian Mao Cao',
                     fontSize: 20.0,
                     fontWeight: FontWeight.w600,
                   ),
-                ));
-              },
-              separatorBuilder: (_, __) => Divider(
-                    height: 1,
-                    color: Colors.green,
-                  ),
-              itemCount: null),
+                ),
+                subtitle: new Text(
+                  "Last Edition on Jana",
+                ),
+              );
+            },
+            separatorBuilder: (_, __) => Divider(
+              height: 1,
+              color: Colors.green,
+            ),
+            itemCount: 30,
+          ),
         ),
       ),
     );
