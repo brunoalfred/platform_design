@@ -28,6 +28,10 @@ class NoteListState extends State<NoteList> {
         noteTitle: 'Note 3'),
   ];
 
+  String formatDateTime(DateTime dateTime) {
+    return '${dateTime.date}/${dateTime.month}/${dateTime.year}';
+  }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
