@@ -29,7 +29,7 @@ class NoteListState extends State<NoteList> {
   ];
 
   String formatDateTime(DateTime dateTime) {
-    return '${dateTime.date}/${dateTime.month}/${dateTime.year}';
+    return '${dateTime.day}/${dateTime.month}/${dateTime.year}';
   }
 
   @override
