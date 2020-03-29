@@ -2,6 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:intro_layouts/features/features/data/models/note_for_listing.dart';
 
 class NoteList extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return NoteListState();
+  }
+}
+
+class NoteListState extends State<NoteList> {
   final notes = [
     new NoteForListing(
         noteId: '1',
@@ -20,14 +28,6 @@ class NoteList extends StatefulWidget {
         noteTitle: 'Note 3'),
   ];
 
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    return NoteListState();
-  }
-}
-
-class NoteListState extends State<NoteList> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -52,7 +52,7 @@ class NoteListState extends State<NoteList> {
             itemBuilder: (_, index) {
               return ListTile(
                 title: Text(
-                  'Halla',
+                  notes[index].noteTitle,
                   style: TextStyle(
                     fontFamily: 'Liu Jian Mao Cao',
                     fontSize: 20.0,
@@ -68,7 +68,7 @@ class NoteListState extends State<NoteList> {
               height: 1,
               color: Colors.green,
             ),
-            itemCount: 30,
+            itemCount: notes.length,
           ),
         ),
       ),
