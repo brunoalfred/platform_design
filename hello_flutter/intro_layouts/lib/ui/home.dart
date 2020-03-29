@@ -1,6 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:intro_layouts/features/features/data/models/note_for_listing.dart';
 
 class NoteList extends StatefulWidget {
+  final notes = [
+    new NoteForListing(
+        noteId: '1',
+        createDataTime: DateTime.now(),
+        lastEditDateTime: DateTime.now(),
+        noteTitle: 'Note 1'),
+    new NoteForListing(
+        noteId: '2',
+        createDataTime: DateTime.now(),
+        lastEditDateTime: DateTime.now(),
+        noteTitle: 'Note 2'),
+    new NoteForListing(
+        noteId: '3',
+        createDataTime: DateTime.now(),
+        lastEditDateTime: DateTime.now(),
+        noteTitle: 'Note 3'),
+  ];
+
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState

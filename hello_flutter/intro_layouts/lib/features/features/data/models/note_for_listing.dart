@@ -1,8 +1,8 @@
 class NoteForListing {
   String noteId;
   String noteTitle;
-  String createDataTime;
-  String lastEditDateTime;
+  DateTime createDataTime;
+  DateTime lastEditDateTime;
 
   NoteForListing(
       {this.noteId,
