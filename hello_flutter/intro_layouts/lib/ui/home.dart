@@ -60,7 +60,7 @@ class NoteListState extends State<NoteList> {
                   ),
                 ),
                 subtitle: new Text(
-                  "Last Edition on Jana",
+                  "Last Edition on ${notes[index].lastEditDateTime}",
                 ),
               );
             },
