@@ -5,3 +5,4 @@ class GetConcreteNumberTrivia {
 
   GetConcreteNumberTrivia(this.repository);
 }
+
