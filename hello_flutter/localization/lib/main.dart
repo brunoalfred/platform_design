@@ -1,3 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main () => 
+void main() => runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Localized App', 
+      home: Home(),
+    ));
