@@ -51,7 +51,7 @@ class NoteListState extends State<NoteList> {
         ),
       ),
       body: new Center(
-        child: new Center(
+        child: new Container(
           child: ListView.separated(
             itemBuilder: (_, index) {
               return ListTile(
@@ -64,7 +64,7 @@ class NoteListState extends State<NoteList> {
                   ),
                 ),
                 subtitle: new Text(
-                  "Last Edition on ${notes[index].lastEditDateTime}",
+                  "Last Edition on ${formatDateTime(notes[index].lastEditDateTime)}",
                 ),
               );
             },
