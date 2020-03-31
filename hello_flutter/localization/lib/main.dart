@@ -7,6 +7,7 @@ void main() => runApp(MaterialApp(
       title: 'Localized App',
       home: Home(),
       localizationsDelegates: [
+        
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
@@ -23,6 +24,10 @@ void main() => runApp(MaterialApp(
               supportedLocale.countryCode == locale.countryCode) {
             return supportedLocale;
           }
+          // If the locale of the device is not supported, use the first one
+          // from the list (English, in this case).
+
+          return supportedLocale.first;
         }
       },
     ));
