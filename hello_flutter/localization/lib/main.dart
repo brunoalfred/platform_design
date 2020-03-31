@@ -7,13 +7,17 @@ void main() => runApp(MaterialApp(
       title: 'Localized App',
       home: Home(),
       localizationsDelegates: [
-        
+        // THIS CLASS WILL BE ADDED LATER
+        // A class which loads the translations from json files
+        // 
         AppLocalizations.delegate,
+        // Built-In localization of basics text for Material Widgets
         GlobalMaterialLocalizations.delegate,
+        // BUilt-In localizations for text direction LTR/RTL
         GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: [
+        // 
         const Locale("en", "US"),
         const Locale("sw", ""),
       ],
