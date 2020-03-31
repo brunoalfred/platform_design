@@ -43,6 +43,7 @@ class AppLocalizations {
   static AppLocalizations of(BuildContext context) {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
+  // Static member to have a simple access to the delegate from the MaterialApp
 
   static const LocalizationsDelegate<AppLocalizations> delegate =
       _AppLocalizationsDelegate();
@@ -76,12 +77,14 @@ class _AppLocalizationsDelegate
   @override
   bool isSupported(Locale locale) {
     // TODO: implement isSupported
+    // Include all of your supported language codes here
     return ["en", "sw"].contains(locale.languageCode);
   }
 
   @override
   Future<AppLocalizations> load(Locale locale) async {
     // TODO: implement load
+    // AppLocalizations class is where the JSON loading actually runs
     AppLocalizations localizations = new AppLocalizations(locale);
     await localizations.load();
     return localizations;
