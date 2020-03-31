@@ -12,8 +12,7 @@ void main() => runApp(MaterialApp(
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: [
-        const Locale("en"),
-        const Locale("sw"),
-        const Locale.fromSubtags(languageCode: "sw"),
+        const Locale("en", "US"),
+        const Locale("sw", ""),
       ],
     ));
