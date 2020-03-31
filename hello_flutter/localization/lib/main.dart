@@ -7,6 +7,7 @@ void main() => runApp(MaterialApp(
       title: 'Localized App',
       home: Home(),
       localizationsDelegates: [
+        AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
@@ -15,4 +16,13 @@ void main() => runApp(MaterialApp(
         const Locale("en", "US"),
         const Locale("sw", ""),
       ],
+      localeResolutionCallback: (locale, supportedLocales) {
+        //Check if the current device locale is supported
+        for (var supportedLocale in supportedLocales) {
+          if (supportedLocale.languageCode == locale.languageCode &&
+              supportedLocale.countryCode == locale.countryCode) {
+            return supportedLocale;
+          }
+        }
+      },
     ));
