@@ -20,13 +20,11 @@ class _HomeState extends State {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: new Text(
-          "Localize Nigga",
-        ),
+        title: new Text(AppLocalizations.of(context).translate('first_string')),
       ),
       body: new Center(
         child: new Container(
-          child: new Text("Yah"),
+          child: new Text(AppLocalizations.of(context).translate('second_string')),
         ),
       ),
     );
@@ -55,5 +53,35 @@ class AppLocalizations {
     _localizedStrings = jsonMap.map((key, value) {
       return MapEntry(key, value.toString());
     });
+    return true;
+  }
+
+  String translate(String key) {
+    return _localizedStrings[key];
+  }
+}
+
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
+  const _AppLocalizationsDelegate();
+
+  @override
+  bool isSupported(Locale locale) {
+    // TODO: implement isSupported
+    return ["en", "sw"].contains(locale.languageCode);
+  }
+
+  @override
+  Future<AppLocalizations> load(Locale locale) async {
+    // TODO: implement load
+    AppLocalizations localizations = new AppLocalizations(locale);
+    await localizations.load();
+    return localizations;
+  }
+
+  @override
+  bool shouldReload(LocalizationsDelegate<AppLocalizations> old) {
+    // TODO: implement shouldReload
+    return false;
   }
 }
