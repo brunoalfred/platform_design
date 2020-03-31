@@ -36,7 +36,7 @@ class NoteListState extends State<NoteList> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(
+      appBar: new AppBar(
         title: new Center(
           child: new Container(
             child: new Text(
@@ -52,15 +52,15 @@ class NoteListState extends State<NoteList> {
       ),
       body: new Center(
         child: new Container(
-          child: ListView.separated(
+          child: new ListView.separated(
             itemBuilder: (_, index) {
               return ListTile(
-                title: Text(
+                title: new Text(
                   notes[index].noteTitle,
-                  style: TextStyle(
+                  style: new TextStyle(
                     fontFamily: 'Liu Jian Mao Cao',
                     fontSize: 20.0,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w800,
                   ),
                 ),
                 subtitle: new Text(
@@ -78,7 +78,9 @@ class NoteListState extends State<NoteList> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.add),
+        child: Icon(
+          Icons.add,
+        ),
       ),
     );
   }
