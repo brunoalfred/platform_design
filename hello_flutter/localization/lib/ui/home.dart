@@ -15,11 +15,7 @@ class _HomeState extends State {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: new Center(
-          new Container(
-            child: new Text("data"),
-          ),
-        ),
+        title: new Text("Localize Nigga"),
       ),
     );
   }
