@@ -4,8 +4,7 @@ import 'package:localization/ui/home.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Localized App', 
-      home: Home(),
+      title: 'Localized App',
 
       /* These delegates make sure that the localization
        data for the proper language is loaded */
@@ -38,7 +37,8 @@ void main() => runApp(MaterialApp(
           // If the locale of the device is not supported, use the first one
           // from the list (English, in this case).
 
-          // return supportedLocales;
+          return supportedLocales.first;
         }
       },
+      home: Home(),
     ));
