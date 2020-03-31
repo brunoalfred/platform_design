@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:localization/ui/app_localization.dart';
 import 'package:localization/ui/home.dart';
 
 void main() => runApp(MaterialApp(
