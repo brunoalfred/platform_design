@@ -26,6 +26,8 @@ void main() => runApp(MaterialApp(
         const Locale("sw", ""),
       ],
 
+      // Returns a locale which will be used by the app
+      
       localeResolutionCallback: (locale, supportedLocales) {
         //Check if the current device locale is supported
         for (var supportedLocale in supportedLocales) {

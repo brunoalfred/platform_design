@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:ffi';
-import 'dart:io';
+import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -24,7 +24,8 @@ class _HomeState extends State {
       ),
       body: new Center(
         child: new Container(
-          child: new Text(AppLocalizations.of(context).translate('second_string')),
+          child:
+              new Text(AppLocalizations.of(context).translate('second_string')),
         ),
       ),
     );
@@ -36,6 +37,9 @@ class AppLocalizations {
 
   AppLocalizations(this.locale);
 
+//  Helper method to keep the code in the widgets concise
+// Localizations are accessed using an InheritedWidget "of" syntax
+
   static AppLocalizations of(BuildContext context) {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
@@ -46,9 +50,10 @@ class AppLocalizations {
   Map<String, String> _localizedStrings;
 
   Future<bool> load() async {
+    // Load the Language JSON file from the "lang" folder
     String jsonString =
         await rootBundle.loadString("language/${locale.languageCode}.json");
-    Map<String, DynamicLibrary> jsonMap = json.decode(jsonString);
+    Map<String, dynamic> jsonMap = json.decode(jsonString);
 
     _localizedStrings = jsonMap.map((key, value) {
       return MapEntry(key, value.toString());
@@ -56,11 +61,13 @@ class AppLocalizations {
     return true;
   }
 
+  //  This method will be called from every widget which needs a localized text
   String translate(String key) {
     return _localizedStrings[key];
   }
 }
 
+  
 class _AppLocalizationsDelegate
     extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
