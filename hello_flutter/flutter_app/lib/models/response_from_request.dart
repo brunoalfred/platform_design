@@ -25,7 +25,7 @@ class Photo {
     );
   }
 
-  
+}
   // TODO: Converting the response into a list of PHOTOS
   
   List<Photo> parsePhotos(String responseBody) {
@@ -34,4 +34,18 @@ class Photo {
     return parsed.map<Photo>((json) => Photo.fromJson(json)).toList();
 }
 
-  Future
+  Future<List<Photo>> fetchPhotos(http.Client client) async {
+    final response = await client.get('https://jsonplaceholder.typicode.com/photo');
+
+    return parsePhotos(response.body);
+  }
+
+  // TODO: Move this  work to separate isolate
+
+//   Future<List<Photo>> fetchPhotos(http.Client client) async {
+//   final response =
+//       await client.get('https://jsonplaceholder.typicode.com/photos');
+
+//   // Use the compute function to run parsePhotos in a separate isolate.
+//   return compute(parsePhotos, response.body);
+// }
