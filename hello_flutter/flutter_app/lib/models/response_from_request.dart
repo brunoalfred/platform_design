@@ -6,4 +6,10 @@ Dart OBJECTS. For easier working with the DATA*/
 
 // TODO: Creating a PHOTO class.
 
-class Photo
+class Photo {
+  final int id;
+  final String title;
+  final String thumbnailUrl;
+  // making a constructor
+  Photo({this.id, this.title, this.thumbnailUrl});
+}
