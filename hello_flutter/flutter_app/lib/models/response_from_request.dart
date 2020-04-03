@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:http/http.dart' as http;
 import './network_request.dart';
 
@@ -22,4 +24,14 @@ class Photo {
       thumbnailUrl: json['thumbanailUrl'] as String,
     );
   }
+
+  
+  // TODO: Converting the response into a list of PHOTOS
+  
+  List<Photo> parsePhotos(String responseBody) {
+    final parsed = json.decode(responseBody).cast<Map<String, dynamic>>();
+  
+    return parsed.map<Photo>((json) => Photo.fromJson(json)).toList();
 }
+
+  Future
