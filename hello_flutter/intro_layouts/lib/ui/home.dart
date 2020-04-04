@@ -9,6 +9,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -30,7 +31,7 @@ class _HomeState extends State<Home> {
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            TextFormField(
+            TextFormField(key: _formKey,
               decoration: const InputDecoration(
                 hintText: 'Enter Your Email',
               ),
