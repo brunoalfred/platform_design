@@ -31,7 +31,8 @@ class _HomeState extends State<Home> {
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            TextFormField(key: _formKey,
+            TextFormField(
+              key: _formKey,
               decoration: const InputDecoration(
                 hintText: 'Enter Your Email',
               ),
@@ -41,6 +42,9 @@ class _HomeState extends State<Home> {
                 }
                 return null;
               },
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
             )
           ],
         ),
