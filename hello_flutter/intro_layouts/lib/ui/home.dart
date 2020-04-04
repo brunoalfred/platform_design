@@ -45,6 +45,11 @@ class _HomeState extends State<Home> {
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
+              child: RaisedButton(
+                onPressed: () {
+                  if (_formKey.currentState.validate()) {/*Process Data*/}
+                },
+              ),
             )
           ],
         ),
