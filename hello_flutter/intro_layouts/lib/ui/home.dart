@@ -9,9 +9,25 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Scaffold(appBar: AppBar(title: ,),);
+    return Scaffold(
+      appBar: AppBar(
+        title: new Text(
+          "form",
+        ),
+        centerTitle: true,
+      ),
+      body: new Form(
+          child: new Column(
+        children: <Widget>[
+          new TextFormField(
+            key: _formKey,
+          )
+        ],
+      )),
+    );
   }
 }
