@@ -33,7 +33,11 @@ class _HomeState extends State<Home> {
             validator: (value) => !value.contains('@') ? "Invalid Email" : null,
             onSaved: (value) => _email = value,
           ),
-          new TextFormField(key: _formKey,)
+          new TextFormField(
+            key: _formKey,
+            validator: (input) =>
+                input.length < 8 ? 'not strong Password' : null,
+          )
         ],
       )),
     );
