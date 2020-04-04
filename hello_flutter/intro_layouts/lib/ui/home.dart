@@ -34,11 +34,24 @@ class _HomeState extends State<Home> {
             TextFormField(
               key: _formKey,
               decoration: const InputDecoration(
+                labelText: 'Email',
                 hintText: 'Enter Your Email',
               ),
               validator: (value) {
                 if (value.isEmpty) {
                   return "Please Enter some Text";
+                }
+                return null;
+              },
+            ),
+            TextFormField(
+              decoration: const InputDecoration(
+                labelText: 'username',
+                hintText: 'Enter Username',
+              ),
+              validator: (input) {
+                if (input.isEmpty) {
+                  return 'Please Enter Username';
                 }
                 return null;
               },
