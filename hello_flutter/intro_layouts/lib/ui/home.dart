@@ -10,6 +10,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final _formKey = GlobalKey<FormState>();
+  String _email, _password;
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -25,7 +26,14 @@ class _HomeState extends State<Home> {
         children: <Widget>[
           new TextFormField(
             key: _formKey,
-          )
+            decoration: new InputDecoration(
+              labelText: 'Email',
+              hintText: 'enter your Email',
+            ),
+            validator: (value) => !value.contains('@') ? "Invalid Email" : null,
+            onSaved: (value) => _email = value,
+          ),
+          new TextFormField(key: _formKey,)
         ],
       )),
     );
