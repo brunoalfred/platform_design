@@ -37,12 +37,8 @@ class _HomeState extends State<Home> {
                 labelText: 'Email',
                 hintText: 'Enter Your Email',
               ),
-              validator: (value) {
-                if (value.isEmpty) {
-                  return "Please Enter some Text";
-                }
-                return null;
-              },
+              validator: (value) =>
+                  !value.contains('@') ? 'Not a valid email' : null,
             ),
             TextFormField(
               decoration: const InputDecoration(
