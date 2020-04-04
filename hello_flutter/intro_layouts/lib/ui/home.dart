@@ -35,6 +35,8 @@ class _HomeState extends State<Home> {
           ),
           new TextFormField(
             key: _formKey,
+            decoration: new InputDecoration(
+                labelText: 'Password', hintText: 'Enter a Password'),
             validator: (input) =>
                 input.length < 8 ? 'not strong Password' : null,
             onSaved: (input) => _password = input,
