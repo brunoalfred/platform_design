@@ -21,7 +21,27 @@ class _HomeState extends State<Home> {
           textDirection: TextDirection.ltr,
           style: TextStyle(
             color: Colors.white,
+            fontFamily: 'Open Sans',
+            fontSize: 24.0,
           ),
+        ),
+      ),
+      body: new Form(
+        child: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            TextFormField(
+              decoration: const InputDecoration(
+                hintText: 'Enter Your Email',
+              ),
+              validator: (value) {
+                if (value.isEmpty) {
+                  return "Please Enter some Text";
+                }
+                return null;
+              },
+            )
+          ],
         ),
       ),
     );
