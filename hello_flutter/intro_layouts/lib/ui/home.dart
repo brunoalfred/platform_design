@@ -8,8 +8,10 @@ class Home extends StatefulWidget {
   }
 }
 
+final _formKey = GlobalKey<FormState>();
+
 class _HomeState extends State<Home> {
-  final _formKey = GlobalKey<FormState>();
+  String _username, _password;
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -28,6 +30,7 @@ class _HomeState extends State<Home> {
         ),
       ),
       body: new Form(
+        key: _formKey,
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -51,13 +54,21 @@ class _HomeState extends State<Home> {
                 }
                 return null;
               },
+              onSaved: (input) => _username = input,
+            ),
+            new TextFormField(
+              decoration: new InputDecoration(
+                labelText: 'Password',
+                hintText: 'Enter Password',
+              ),
+              validator: (input) =>
+                  input.length < 8 ? 'Less Than Eight Characters' : null,
+              onSaved: (input) => _password = input,
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: RaisedButton(
-                onPressed: () {
-                  if (_formKey.currentState.validate()) {/*Process Data*/}
-                },
+                onPressed: _submit(),
               ),
             )
           ],
@@ -65,4 +76,10 @@ class _HomeState extends State<Home> {
       ),
     );
   }
+}
+
+void _submit() {
+  if (_formKey.currentState.validate()) {
+    _formKey.currentState.save()
+    /*Process Data*/}
 }
