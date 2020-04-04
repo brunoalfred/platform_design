@@ -12,7 +12,18 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Scaffold(appBar: AppBar(centerTitle: true,title: new Text("Form"),),);
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: new Text(
+          "Form",
+          textAlign: TextAlign.center,
+          textDirection: TextDirection.ltr,
+          style: TextStyle(
+            color: Colors.blueAccent,
+          ),
+        ),
+      ),
+    );
   }
-
 }
