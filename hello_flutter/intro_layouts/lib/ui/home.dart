@@ -37,6 +37,7 @@ class _HomeState extends State<Home> {
             key: _formKey,
             validator: (input) =>
                 input.length < 8 ? 'not strong Password' : null,
+            onSaved: (input) => _password = input,
           )
         ],
       )),
