@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
           textAlign: TextAlign.center,
           textDirection: TextDirection.ltr,
           style: TextStyle(
-            color: Colors.blueAccent,
+            color: Colors.white,
           ),
         ),
       ),
