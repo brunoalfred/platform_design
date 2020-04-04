@@ -11,6 +11,20 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  Future getData() async {
+    http.Response response =
+        await http.get(" https://reqres.in/api/users?page=2");
+    debugPrint(response.body);
+
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getData();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
