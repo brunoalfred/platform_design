@@ -11,16 +11,16 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
-  Map data ;
+  Map data;
   List userData;
-
 
   Future getData() async {
     http.Response response =
         await http.get(" https://reqres.in/api/users?page=2");
     data = json.decode(response.body);
-
+    setState(() {
+      userData = data['data'];
+    });
   }
 
   @override
