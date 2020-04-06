@@ -13,9 +13,11 @@ class Post {
     @required this.title,
     @required this.body,
   });
-  factory Post.fromJson() {
-    return
+  factory Post.fromJson(Map<String, dynamic> json) {
+    return Post(
+        userId: json['userId'] as int,
+        id: json['id'] as int,
+        title: json['title'] as String,
+        body: json['body'] as String);
   }
 }
-
-
