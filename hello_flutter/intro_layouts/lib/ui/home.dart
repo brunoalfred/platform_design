@@ -30,6 +30,7 @@ class _HomeState extends State<Home> {
 
     setState(() {
       var convertDataToJson = json.decode(response.body);
+      data = 
     });
   }
 
