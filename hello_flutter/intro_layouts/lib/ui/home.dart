@@ -23,10 +23,10 @@ class _HomeState extends State<Home> {
 
   Future<String> getJsonData() async {
     var response = await http.get(
-      //Encode url
-      Uri.encodeFull(url),
-      //only accept json response
-    );
+        //Encode url
+        Uri.encodeFull(url),
+        //only accept json response
+        headers: {"Accept": "application/json"});
   }
 
   @override
