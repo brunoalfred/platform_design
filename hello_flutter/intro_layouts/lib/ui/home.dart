@@ -11,25 +11,9 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  Map data;
-  List userData;
+  
 
-  Future getData() async {
-    http.Response response =
-        await http.get(" https://reqres.in/api/users?page=2");
-    data = json.decode(response.body);
-    setState(() {
-      userData = data['data'];
-    });
-  }
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    getData();
-  }
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,10 +22,26 @@ class _HomeState extends State<Home> {
           "Users",
         ),
       ),
-      body:
-          new ListView.builder(itemBuilder: (BuildContext context, int index) {
-        return new Container();
-      }),
+      body: new ListView.builder(
+        itemCount: 1,
+        itemBuilder: (BuildContext context, int index) {
+          return new Container(
+            child: new Center(
+              child: new Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  new Card(
+                    child: new Container(
+                      child: new Text("Hello"),
+                      padding: const EdgeInsets.all(20.0),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          );
+        },
+      ),
     );
   }
 }
