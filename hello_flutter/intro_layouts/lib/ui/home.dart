@@ -27,6 +27,10 @@ class _HomeState extends State<Home> {
         Uri.encodeFull(url),
         //only accept json response
         headers: {"Accept": "application/json"});
+
+    setState(() {
+      var convertDataToJson = json.decode(response.body);
+    });
   }
 
   @override
