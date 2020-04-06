@@ -11,7 +11,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  
+  final String url = "https://reqres.in/api/users?page=2";
 
   
   @override
