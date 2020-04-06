@@ -16,7 +16,12 @@ class Home extends StatelessWidget {
           builder: (BuildContext context, AsyncSnapshot<List<Post>> snapshot) {
         if (snapshot.hasData) {
           List<Post> posts = snapshot.data;
-          return 
+          return ListView(
+            children: posts.map((Post post) => ListTile(
+                  title: new Text(post.title),
+                  subtitle: new Text(data),
+                )),
+          );
         }
       }),
     );
