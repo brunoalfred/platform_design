@@ -1,7 +1,12 @@
 import 'dart:convert';
-
 import 'package:http/http.dart';
 import 'package:intro_layouts/http/posts_model.dart';
+
+
+
+
+
+
 
 class HttpService {
   final String url = "https://jsonplaceholder.typicode.com/posts";
