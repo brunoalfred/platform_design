@@ -18,7 +18,9 @@ class HttpService {
           )
           .toList();
 
-        return posts;
+      return posts;
+    } else {
+      throw 'cant get posts';
     }
   }
 }
