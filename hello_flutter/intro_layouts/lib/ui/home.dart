@@ -11,18 +11,9 @@ class Home extends StatelessWidget {
         title: new Text('Http Request'),
         centerTitle: true,
       ),
-      body: new Container(
-        child: ListView(
-          children: <Widget>[
-            ListTile(
-              title: new Text("Boy"),
-            ),
-            ListTile(
-              title: new Text("Girl"),
-            )
-          ],
-        ),
-      ),
+      body: 
+        
+    
     );
   }
 }
