@@ -45,7 +45,7 @@ class _HomeState extends State<Home> {
         ),
       ),
       body: new ListView.builder(
-        itemCount: 1,
+        itemCount: data == null ? 0 : data.length,
         itemBuilder: (BuildContext context, int index) {
           return new Container(
             child: new Center(
@@ -54,7 +54,7 @@ class _HomeState extends State<Home> {
                 children: <Widget>[
                   new Card(
                     child: new Container(
-                      child: new Text("Hello"),
+                      child: new Text(data[index]['name']),
                       padding: const EdgeInsets.all(20.0),
                     ),
                   )
