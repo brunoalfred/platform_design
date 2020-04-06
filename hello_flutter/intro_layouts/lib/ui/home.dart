@@ -11,9 +11,24 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final String url = "https://reqres.in/api/users?page=2";
+  final String url = "https://swapi.co/api/people";
+  List data;
 
-  
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    this.getJsonData();
+  }
+
+  Future<String> getJsonData() async {
+    var response = await http.get(
+      //Encode url
+      Uri.encodeFull(url),
+      //only accept json response
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
