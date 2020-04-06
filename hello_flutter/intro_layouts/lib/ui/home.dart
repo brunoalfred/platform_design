@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
           "Users",
         ),
       ),
-      body: new Column(),
+      body: new ListView.builder(itemBuilder: (BuildContext context, int index){}),
     );
   }
 }
