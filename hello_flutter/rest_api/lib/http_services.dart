@@ -12,9 +12,9 @@ class HttpService {
     http.Response response = await http.get(url);
 
     if (response.statusCode == 200) {
-      var jsonResponse = jsonDecode(response.body);
+      var jsonResponce = jsonDecode(response.body);
 
-      
+
     }
 
 
