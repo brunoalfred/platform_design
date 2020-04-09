@@ -9,8 +9,16 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  var id = const [];
   var title = const [];
   var body = const [];
+
+  @override
+  void setState(fn) {
+    // TODO: implement setState
+    super.setState(fn);
+  }
+
 
 
   @override
