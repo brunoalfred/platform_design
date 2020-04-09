@@ -20,7 +20,9 @@ class _HomeState extends State<Home> {
         centerTitle: true,
         elevation: 10.0,
       ),
-      body: Card(),
+      body: Card(
+        child: ListView(),
+      ),
     );
   }
 }
