@@ -16,7 +16,9 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: new Text(
           "Rest Api",
-        ),centerTitle: true,
+        ),
+        centerTitle: true,
+        elevation: 10.0,
       ),
     );
   }
