@@ -7,7 +7,7 @@ void main() => runApp(
         title: 'Rest Api Consuming',
         theme: ThemeData(
           primaryColor: Colors.blueAccent,
-          brightness: Brightness.dark,
+          brightness: Brightness.light,
         ),
     home: Home(),  ),
     );
