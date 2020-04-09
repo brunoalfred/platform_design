@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:rest_api/post_models.dart';
+import 'package:rest_api/http_services.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -14,9 +16,8 @@ class _HomeState extends State<Home> {
   var body = const [];
 
   @override
-  void setState(fn) {
-    // TODO: implement setState
-    super.setState(fn);
+  void setState() {
+    Post post = _posts;
   }
 
 
