@@ -21,7 +21,9 @@ class _HomeState extends State<Home> {
         elevation: 10.0,
       ),
       body: Card(
-        child: ListView(),
+        child: ListView(
+          children: <Widget>[ListTile()],
+        ),
       ),
     );
   }
