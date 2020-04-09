@@ -9,6 +9,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  var title = const [];
+  var body = const [];
+
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -22,7 +26,7 @@ class _HomeState extends State<Home> {
       ),
       body: Card(
         child: ListView(
-          children: <Widget>[ListTile()],
+          children: <Widget>[ListTile(title: ,)],
         ),
       ),
     );
