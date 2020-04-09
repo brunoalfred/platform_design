@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:rest_api/ui/home.dart';
 
-void main() => runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Rest Api Consuming',
-      theme: ThemeData(
-        primaryColor: Colors.blueAccent,
-        brightness: Brightness.dark,
-      ),
-    ));
+void main() => runApp(
+      MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Rest Api Consuming',
+        theme: ThemeData(
+          primaryColor: Colors.blueAccent,
+          brightness: Brightness.dark,
+        ),
+    home: Home(),  ),
+    );
