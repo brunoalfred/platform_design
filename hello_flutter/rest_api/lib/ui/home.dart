@@ -13,7 +13,11 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: new Text(
+          "Rest Api",
+        ),
+      ),
     );
   }
 }
