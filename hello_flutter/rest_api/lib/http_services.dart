@@ -15,7 +15,9 @@ class HttpService {
       var jsonResponce = jsonDecode(response.body);
       List<Post> _posts =
           jsonResponce.map((json) => Post.fromJson(json)).toList();
-          return _posts;
-    } else {}
+      return _posts;
+    } else {
+      return null;
+    }
   }
 }
