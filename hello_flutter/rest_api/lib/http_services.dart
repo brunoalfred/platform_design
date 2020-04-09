@@ -13,11 +13,8 @@ class HttpService {
 
     if (response.statusCode == 200) {
       var jsonResponce = jsonDecode(response.body);
-      List<Post> _posts = jsonResponce.map((json) => )
-
-
+      List<Post> _posts =
+          jsonResponce.map((json) => Post.fromJson(json)).toList();
     }
-
-
   }
 }
