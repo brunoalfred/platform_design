@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
           "Rest Api",
         ),
         centerTitle: true,
-        elevation: 10.0,
+        elevation: 12.0,
       ),
       body: Card(
         child: ListView(
