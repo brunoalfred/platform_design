@@ -38,7 +38,10 @@ class _HomeState extends State<Home> {
                   fontSize: 20.0,
                 ),
               ),
-              subtitle: new Text('Sub-title'),
+              subtitle: new Text(
+                'Sub-title',
+                textAlign: TextAlign.center,
+              ),
             ),
           ],
         ),
