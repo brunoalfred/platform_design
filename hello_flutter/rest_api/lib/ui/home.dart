@@ -32,7 +32,7 @@ class _HomeState extends State<Home> {
       ),
       body: Card(
         child: ListView(
-          children: <Widget>[ListTile(title: new Text(title),)],
+          children: <Widget>[],
         ),
       ),
     );
