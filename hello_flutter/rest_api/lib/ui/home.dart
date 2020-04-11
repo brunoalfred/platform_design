@@ -181,7 +181,29 @@ class _HomeState extends State<Home> {
                   ),
                 ),
               ),
-            )
+            ),
+            new Card(
+              elevation: 10.0,
+              child: ListTile(
+                title: new Text(
+                  'Title',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w800,
+                    fontSize: 20.0,
+                  ),
+                ),
+                subtitle: new Text(
+                  'Sub-title',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
