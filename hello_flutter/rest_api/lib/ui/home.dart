@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rest_api/post_models.dart';
 
-
 class Home extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -14,10 +13,6 @@ class _HomeState extends State<Home> {
   var id = const [];
   var title = const [];
   var body = const [];
-
- 
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +27,19 @@ class _HomeState extends State<Home> {
       ),
       body: Card(
         child: ListView(
-          children: <Widget>[ListTile(title: new Text('T'),)],
+          children: <Widget>[
+            ListTile(
+              title: new Text(
+                'Title',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              subtitle: new Text('Sub-title'),
+            ),
+          ],
         ),
       ),
     );
