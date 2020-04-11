@@ -35,7 +35,7 @@ class _HomeState extends State<Home> {
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w800,
-                  fontSize: 18.0,
+                  fontSize: 20.0,
                 ),
               ),
               subtitle: new Text('Sub-title'),
