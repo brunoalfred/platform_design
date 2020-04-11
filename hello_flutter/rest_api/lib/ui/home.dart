@@ -41,6 +41,9 @@ class _HomeState extends State<Home> {
               subtitle: new Text(
                 'Sub-title',
                 textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.black,
+                fontWeight: FontWeight.normal,),
               ),
             ),
           ],
