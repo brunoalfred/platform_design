@@ -28,24 +28,28 @@ class _HomeState extends State<Home> {
       body: Card(
         child: ListView(
           children: <Widget>[
-            ListTile(
-              title: new Text(
-                'Title',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.w800,
-                  fontSize: 20.0,
+            new Card(
+              elevation: 3.0,
+              child: ListTile(
+                title: new Text(
+                  'Title',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w800,
+                    fontSize: 20.0,
+                  ),
+                ),
+                subtitle: new Text(
+                  'Sub-title',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.normal,
+                  ),
                 ),
               ),
-              subtitle: new Text(
-                'Sub-title',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.black,
-                fontWeight: FontWeight.normal,),
-              ),
-            ),
+            )
           ],
         ),
       ),
