@@ -42,10 +42,15 @@ class _HomeState extends State<Home> {
           ),
           centerTitle: true,
         ),
-        body: ListView.builder(itemBuilder: (context, index) {
-          return Card(
-            child: ListTile(),
-          );
-        }));
+        body: ListView.builder(
+            itemCount: titles.length,
+            itemBuilder: (context, index) {
+              return Card(
+                child: ListTile(
+                  leading: Icon(icons[index]),
+                  title: new Text(titles[index]),
+                ),
+              );
+            }));
   }
 }
