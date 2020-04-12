@@ -5,7 +5,10 @@ class FirstRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: new Text('First Screen'),
+        centerTitle: true,
+      ),
     );
   }
 }
