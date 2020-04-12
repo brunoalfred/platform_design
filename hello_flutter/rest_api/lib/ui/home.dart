@@ -77,6 +77,7 @@ class _HomeState extends State<Home> {
           return ListTile(
             leading: Icon(Icons.wb_sunny),
             title: new Text('sun rise'),
+            trailing: Icon(Icons.keyboard_arrow_right),
           );
         },
       ),
