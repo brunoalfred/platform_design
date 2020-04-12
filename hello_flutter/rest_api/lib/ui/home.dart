@@ -17,7 +17,9 @@ class _HomeState extends State<Home> {
         title: new Text(
           "Dynamc ListView",
           textAlign: TextAlign.center,
-          style: TextStyle(),
+          style: TextStyle(
+            color: Colors.black,
+          ),
         ),
       ),
     );
