@@ -49,6 +49,7 @@ class _HomeState extends State<Home> {
                 child: ListTile(
                   leading: Icon(icons[index]),
                   title: new Text(titles[index]),
+                  trailing: Icon(Icons.keyboard_arrow_right),
                 ),
               );
             }));
