@@ -36,23 +36,16 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: new Text(
-          'Infinite List',
+        appBar: AppBar(
+          title: new Text(
+            'Infinite List',
+          ),
+          centerTitle: true,
         ),
-        centerTitle: true,
-      ),
-      body: ListView.builder(
-        itemBuilder: (context, index) {
+        body: ListView.builder(itemBuilder: (context, index) {
           return Card(
-            child: ListTile(
-              leading: Icon(icons[index]),
-              title: new Text(titles[index]),
-              trailing: Icon(Icons.keyboard_arrow_right),
-            ),
+            child: ListTile(),
           );
-        },
-      ),
-    );
+        }));
   }
 }
