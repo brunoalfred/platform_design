@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 
 class FirstRoute extends StatelessWidget {
@@ -11,7 +13,10 @@ class FirstRoute extends StatelessWidget {
       ),
       body: new Center(
         child: RaisedButton(
-          onPressed: _firstRoute,
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => SecondRoute()));
+          },
           child: new Text("Open Route"),
         ),
       ),
@@ -29,13 +34,12 @@ class SecondRoute extends StatelessWidget {
       ),
       body: new Center(
         child: RaisedButton(
-          onPressed: _secondRoute,
+          onPressed: () {
+            Navigator.pop(context);
+          },
           child: new Text("Go Back!"),
         ),
       ),
     );
   }
 }
-
-_firstRoute() {}
-_secondRoute() {}
