@@ -8,7 +8,7 @@ class HttpService {
 
   Future<List<Post>> getPosts() async {
     http.Response response = await http.get(url);
-
+  
     if (response.statusCode == 200) {
       var jsonResponce = jsonDecode(response.body);
       List<Post> _posts =
