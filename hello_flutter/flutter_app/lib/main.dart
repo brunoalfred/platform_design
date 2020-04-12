@@ -27,6 +27,12 @@ class SecondRoute extends StatelessWidget {
         title: new Text("Second Route"),
         centerTitle: true,
       ),
+      body: new Center(
+        child: RaisedButton(
+          onPressed: _secondRoute,
+          child: new Text("Go Back!"),
+        ),
+      ),
     );
   }
 }
