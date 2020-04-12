@@ -38,3 +38,4 @@ class SecondRoute extends StatelessWidget {
 }
 
 _firstRoute() {}
+_secondRoute() {}
