@@ -66,17 +66,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Scaffold(
-      appBar: AppBar(
-        title: new Text(
-          "Dynamc ListView",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 25.0,
-          ),
-        ),
-      ),
-    );
+    return Scaffold();
   }
+  
 }
