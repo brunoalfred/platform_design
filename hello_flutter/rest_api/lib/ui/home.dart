@@ -72,9 +72,14 @@ class _HomeState extends State<Home> {
         ),
         centerTitle: true,
       ),
-      body: ListView.builder(itemBuilder: (context, index) {
-        return ListTile(leading: Icon(),);
-      }),
+      body: ListView.builder(
+        itemBuilder: (context, index) {
+          return ListTile(
+            leading: Icon(Icons.wb_sunny),
+            title: new Text('sun rise'),
+          );
+        },
+      ),
     );
   }
 }
