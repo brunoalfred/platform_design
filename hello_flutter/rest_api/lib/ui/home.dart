@@ -74,10 +74,12 @@ class _HomeState extends State<Home> {
       ),
       body: ListView.builder(
         itemBuilder: (context, index) {
-          return ListTile(
-            leading: Icon(Icons.wb_sunny),
-            title: new Text('sun rise'),
-            trailing: Icon(Icons.keyboard_arrow_right),
+          return Card(
+            ListTile(
+              leading: Icon(Icons.wb_sunny),
+              title: new Text('sun rise'),
+              trailing: Icon(Icons.keyboard_arrow_right),
+            ),
           );
         },
       ),
