@@ -67,26 +67,19 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(
-        title: new Text(
-          "Dynamic List",
-          style: TextStyle(
-            color: Colors.black,
+        appBar: AppBar(
+          title: new Text(
+            "Dynamic List",
+            style: TextStyle(
+              color: Colors.black,
+            ),
           ),
+          centerTitle: true,
         ),
-        centerTitle: true,
-      ),
-      body: ListView.builder(
-          itemCount: europeanCountries.length,
-          itemBuilder: (context, index) {
-            return ListTile(
-              contentPadding: EdgeInsets.all(5.0),
-              title: new Text(
-                europeanCountries[index],
-                textAlign: TextAlign.center,
-              ),
-            );
-          }),
-    );
+        body: ListView.builder(itemBuilder: (context, index) {
+          return ListTile(
+            title: new Text(europeanCountries[index]),
+          );
+        }));
   }
 }
