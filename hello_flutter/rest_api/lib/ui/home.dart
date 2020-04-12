@@ -65,21 +65,13 @@ final europeanCountries = [
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
-        appBar: AppBar(
-          title: new Text(
-            "Dynamic List",
-            style: TextStyle(
-              color: Colors.black,
-            ),
-          ),
-          centerTitle: true,
+      appBar: AppBar(
+        title: new Text(
+          'Infinite List',
         ),
-        body: ListView.builder(itemBuilder: (context, index) {
-          return ListTile(
-            title: new Text(europeanCountries[index]),
-          );
-        }));
+        centerTitle: true,
+      ),
+    );
   }
 }
