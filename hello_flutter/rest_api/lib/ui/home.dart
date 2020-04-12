@@ -76,11 +76,13 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
-      body: ListView.builder(itemBuilder: (context, index) {
-        return ListTile(
-          title: new Text(europeanCountries[index]),
-        );
-      }),
+      body: ListView.builder(
+          itemCount: europeanCountries.length,
+          itemBuilder: (context, index) {
+            return ListTile(
+              title: new Text(europeanCountries[index]),
+            );
+          }),
     );
   }
 }
