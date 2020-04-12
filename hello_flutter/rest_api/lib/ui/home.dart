@@ -45,9 +45,9 @@ class _HomeState extends State<Home> {
       body: ListView.builder(
         itemBuilder: (context, index) {
           return Card(
-            ListTile(
-              leading: Icon(Icons.wb_sunny),
-              title: new Text('sun rise'),
+            child: ListTile(
+              leading: Icon(icons[index]),
+              title: new Text(titles[index]),
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
           );
