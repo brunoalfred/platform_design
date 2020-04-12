@@ -76,7 +76,9 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
-      body: ,
+      body: ListView.builder(itemBuilder: (context, index) {
+        return ListTile(title: new Text(data),);
+      }),
     );
   }
 }
