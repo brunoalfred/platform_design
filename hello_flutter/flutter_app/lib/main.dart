@@ -19,4 +19,11 @@ class FirstRoute extends StatelessWidget {
   }
 }
 
+
+class SecondRoute extends StatefulWidget{
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(appBar: AppBar(title: new Text(data),),);
+  }
+}
 _firstRoute() {}
