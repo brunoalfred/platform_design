@@ -70,17 +70,21 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: new Text(
           "Dynamic List",
-          textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.black,
           ),
         ),
+        centerTitle: true,
       ),
       body: ListView.builder(
           itemCount: europeanCountries.length,
           itemBuilder: (context, index) {
             return ListTile(
-              title: new Text(europeanCountries[index]),
+              contentPadding: EdgeInsets.all(5.0),
+              title: new Text(
+                europeanCountries[index],
+                textAlign: TextAlign.center,
+              ),
             );
           }),
     );
