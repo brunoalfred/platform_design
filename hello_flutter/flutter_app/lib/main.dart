@@ -25,6 +25,7 @@ class SecondRoute extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: new Text("Second Route"),
+        centerTitle: true,
       ),
     );
   }
