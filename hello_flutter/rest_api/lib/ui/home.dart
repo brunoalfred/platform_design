@@ -66,7 +66,16 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Scaffold(appBar: AppBar(title: new Text("Dynamic List"),),);
+    return Scaffold(
+      appBar: AppBar(
+        title: new Text(
+          "Dynamic List",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.black,
+          ),
+        ),
+      ),
+    );
   }
-  
 }
