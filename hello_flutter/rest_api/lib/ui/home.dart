@@ -72,6 +72,9 @@ class _HomeState extends State<Home> {
         ),
         centerTitle: true,
       ),
+      body: ListView.builder(itemBuilder: (context, index) {
+        return ListTile(leading: Icon(),);
+      }),
     );
   }
 }
