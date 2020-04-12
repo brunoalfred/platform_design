@@ -9,10 +9,14 @@ class FirstRoute extends StatelessWidget {
         title: new Text('First Screen'),
         centerTitle: true,
       ),
-      body: new Center(child: RaisedButton(onPressed: _firstRoute),),
+      body: new Center(
+        child: RaisedButton(
+          onPressed: _firstRoute,
+          child: new Text("Open Route"),
+        ),
+      ),
     );
   }
 }
 
-
-_firstRoute(){}
+_firstRoute() {}
