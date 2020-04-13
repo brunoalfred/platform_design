@@ -93,6 +93,12 @@ class ListNote extends StatelessWidget {
                 ),
             itemCount: notes.length),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(
+          Icons.add,
+        ),
+      ),
     );
   }
 }
