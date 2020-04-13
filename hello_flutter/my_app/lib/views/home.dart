@@ -59,7 +59,7 @@ class ListNote extends StatelessWidget {
                     height: 1.0,
                     color: Theme.of(context).primaryColor,
                   ),
-              itemCount: 20),
+              itemCount: notes.length),
         ));
   }
 }
