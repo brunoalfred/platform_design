@@ -75,7 +75,8 @@ class ListNote extends StatelessWidget {
             color: Colors.white,
           ),
         ),
-        centerTitle: true,elevation: 10.0,
+        centerTitle: true,
+        elevation: 10.0,
       ),
       body: new Container(
         child: new ListView.separated(
@@ -83,7 +84,7 @@ class ListNote extends StatelessWidget {
               return ListTile(
                 title: new Text(notes[index].noteTitle),
                 subtitle: new Text(
-                    'Last edited date is ${notes[index].lastEditDateTime}'),
+                    'Last edited date is ${formatDateTime(notes[index].lastEditDateTime)}'),
               );
             },
             separatorBuilder: (_, __) => Divider(
@@ -95,7 +96,6 @@ class ListNote extends StatelessWidget {
     );
   }
 }
-
 
 String formatDateTime(DateTime dateTime) {
   return '${dateTime.day}/${dateTime.month}/${dateTime.year}';
