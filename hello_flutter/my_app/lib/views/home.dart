@@ -17,7 +17,10 @@ class ListNote extends StatelessWidget {
         body: new Container(
           child: new ListView.separated(
               itemBuilder: (contex, index) {
-                return ListTile();
+                return ListTile(
+                  title: new Text("data"),
+                  subtitle: new Text("data"),
+                );
               },
               separatorBuilder: (_, __) => Divider(
                     height: 1.0,
