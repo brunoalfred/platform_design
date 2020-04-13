@@ -14,8 +14,7 @@ class FirstScreen extends StatelessWidget {
       body: new Center(
         child: RaisedButton(
           onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SecondScreen()));
+            Navigator.pushNamed(context, '/second');
           },
           child: new Text("Open Route"),
         ),
