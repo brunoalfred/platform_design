@@ -75,7 +75,7 @@ class ListNote extends StatelessWidget {
             color: Colors.white,
           ),
         ),
-        centerTitle: true,
+        centerTitle: true,elevation: 10.0,
       ),
       body: new Container(
         child: new ListView.separated(
