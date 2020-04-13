@@ -95,3 +95,8 @@ class ListNote extends StatelessWidget {
     );
   }
 }
+
+
+String formatDateTime(DateTime dateTime) {
+  return '${dateTime.day}/${dateTime.month}/${dateTime.year}';
+}
