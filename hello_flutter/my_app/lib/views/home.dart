@@ -12,6 +12,7 @@ class ListNote extends StatelessWidget {
             color: Colors.white,
           ),
         ),
+        centerTitle: true,
       ),
     );
   }
