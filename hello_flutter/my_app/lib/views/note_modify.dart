@@ -9,7 +9,9 @@ class NoteModify extends StatelessWidget {
       appBar: AppBar(
         title: new Text("New Page"),
       ),
-      body: new Container(),
+      body: new Container(
+        child: new Card(),
+      ),
     );
   }
 }
