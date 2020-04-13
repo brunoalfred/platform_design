@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class ListNote extends StatelessWidget {
+
+  final notes = [];
+
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
