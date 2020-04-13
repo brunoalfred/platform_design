@@ -9,5 +9,6 @@ void main() => runApp(MaterialApp(
         brightness: Brightness.light,
       ),
       home: FirstRoute(),
+      initialRoute: '/',
       routes: <String, WidgetBuilder>{},
     ));
