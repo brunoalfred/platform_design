@@ -35,6 +35,8 @@ class SecondScreen extends StatelessWidget {
       body: new Center(
         child: RaisedButton(
           onPressed: () {
+            // Navigate back to the first screen by popping the current route
+            // off the stack.
             Navigator.pop(context);
           },
           child: new Text("Go Back!"),
