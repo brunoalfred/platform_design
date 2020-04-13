@@ -10,10 +10,12 @@ void main() => runApp(MaterialApp(
         accentColor: Colors.greenAccent,
         brightness: Brightness.light,
       ),
-      home: FirstRoute(),
+      // home: FirstRoute(),
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
         // When navigating to the first screen, build the firstScreen Widget
-        '/': (context) => Fi
+        '/': (context) => FirstScreen(),
+        // When navigating to the second screen, build the secondScreen Widget
+        '/second': (context) => SecondScreen(),
       },
     ));
