@@ -52,7 +52,8 @@ class ListNote extends StatelessWidget {
               itemBuilder: (contex, index) {
                 return ListTile(
                   title: new Text(notes[index].noteTitle),
-                  subtitle: new Text(notes[index].),
+                  subtitle: new Text(
+                      'Last edited date is ${notes[index].lastEditDateTime}'),
                 );
               },
               separatorBuilder: (_, __) => Divider(
