@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/ui/home.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -7,4 +8,5 @@ void main() => runApp(MaterialApp(
         accentColor: Colors.greenAccent,
         brightness: Brightness.light,
       ),
+      home: FirstRoute(),
     ));
