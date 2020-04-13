@@ -6,21 +6,25 @@ class NoteModify extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(
-        title: new Text("New Page"),
-      ),
-      body: new Column(
-        children: <Widget>[
-          new TextField(
-            decoration: InputDecoration(
-              hintText: 'Note Title',
-            ),
+        appBar: AppBar(
+          title: new Text("New Page"),
+        ),
+        body: new Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: new Column(
+            children: <Widget>[
+              new TextField(
+                decoration: InputDecoration(
+                  hintText: 'Note Title',
+                ),
+              ),
+              new TextField(
+                decoration: InputDecoration(
+                  hintText: 'Note Context',
+                ),
+              )
+            ],
           ),
-          new TextField(
-            decoration: InputDecoration(hintText: 'Note Context'),
-          )
-        ],
-      ),
-    );
+        ));
   }
 }
