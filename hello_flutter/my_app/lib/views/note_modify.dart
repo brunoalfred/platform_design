@@ -27,7 +27,9 @@ class NoteModify extends StatelessWidget {
               ),
             ),
             RaisedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
               child: new Text("Submit"),
               color: Theme.of(context).primaryColor,
             )
