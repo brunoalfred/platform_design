@@ -26,7 +26,11 @@ class NoteModify extends StatelessWidget {
                 hintText: 'Note Context',
               ),
             ),
-            RaisedButton(onPressed: () {})
+            RaisedButton(
+              onPressed: () {},
+              child: new Text("Submit"),
+              color: Theme.of(context).primaryColor,
+            )
           ],
         ),
       ),
