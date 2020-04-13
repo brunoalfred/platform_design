@@ -14,6 +14,22 @@ class ListNote extends StatelessWidget {
         ),
         centerTitle: true,
       ),
+      body: new Center(
+        child: new ListView.separated(
+            itemBuilder: (context, index) {
+              return ListTile(
+                title: new Text(
+                  "data",
+                  textAlign: TextAlign.center,
+                ),
+              );
+            },
+            separatorBuilder: (_, __) => Divider(
+                  height: 1.0,
+                  color: Theme.of(context).primaryColor,
+                ),
+            itemCount: 20),
+      ),
     );
   }
 }
