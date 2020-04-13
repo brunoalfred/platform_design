@@ -22,6 +22,10 @@ class ListNote extends StatelessWidget {
                   "data",
                   textAlign: TextAlign.center,
                 ),
+                subtitle: new Text(
+                  "Date Generated",
+                  textAlign: TextAlign.left,
+                ),
               );
             },
             separatorBuilder: (_, __) => Divider(
