@@ -14,6 +14,7 @@ class FirstScreen extends StatelessWidget {
       body: new Center(
         child: RaisedButton(
           onPressed: () {
+            // navigate to the second screen using a named route
             Navigator.pushNamed(context, '/second');
           },
           child: new Text("Open Route"),
