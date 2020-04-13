@@ -9,8 +9,17 @@ class NoteModify extends StatelessWidget {
       appBar: AppBar(
         title: new Text("New Page"),
       ),
-      body: new Container(
-        child: new Card(),
+      body: new Column(
+        children: <Widget>[
+          new TextField(
+            decoration: InputDecoration(
+              hintText: 'Note Title',
+            ),
+          ),
+          new TextField(
+            decoration: InputDecoration(hintText: 'Note Context'),
+          )
+        ],
       ),
     );
   }
