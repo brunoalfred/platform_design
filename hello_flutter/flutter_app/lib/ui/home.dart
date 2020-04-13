@@ -2,7 +2,7 @@ import 'dart:js';
 
 import 'package:flutter/material.dart';
 
-class FirstRoute extends StatelessWidget {
+class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -15,7 +15,7 @@ class FirstRoute extends StatelessWidget {
         child: RaisedButton(
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SecondRoute()));
+                MaterialPageRoute(builder: (context) => SecondScreen()));
           },
           child: new Text("Open Route"),
         ),
@@ -24,7 +24,7 @@ class FirstRoute extends StatelessWidget {
   }
 }
 
-class SecondRoute extends StatelessWidget {
+class SecondScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

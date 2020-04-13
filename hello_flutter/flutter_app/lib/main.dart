@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:flutterapp/ui/home.dart';
 
@@ -10,5 +12,8 @@ void main() => runApp(MaterialApp(
       ),
       home: FirstRoute(),
       initialRoute: '/',
-      routes: <String, WidgetBuilder>{},
+      routes: <String, WidgetBuilder>{
+        // When navigating to the first screen, build the firstScreen Widget
+        '/': (context) => Fi
+      },
     ));
