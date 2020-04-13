@@ -5,6 +5,11 @@ class NoteModify extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Scaffold(appBar: AppBar(title: new Text("New Page"),),);
+    return Scaffold(
+      appBar: AppBar(
+        title: new Text("New Page"),
+      ),
+      body: new Container(),
+    );
   }
 }
