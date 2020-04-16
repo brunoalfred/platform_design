@@ -15,7 +15,7 @@ void main() => runApp(
         routes: <String, WidgetBuilder>{
           // ? create the Login page
           '/login': (context) => Login(),
-          // ? create the home pade
+          // ? create the home  page
           '/home': (context) => Home(),
         },
       ),
