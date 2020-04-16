@@ -1,4 +1,3 @@
-import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:offline/views/home.dart';
@@ -14,8 +13,11 @@ void main() => runApp(
         ),
         initialRoute: '/login',
         routes: <String, WidgetBuilder>{
+          // ? create the Login page
           '/login': (context) => Login(),
-          '/home': (context) => Home()
+          // ? create the home pade
+          '/home': (context) => Home(),
         },
       ),
     );
+
