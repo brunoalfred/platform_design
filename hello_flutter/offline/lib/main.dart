@@ -5,5 +5,6 @@ void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         accentColor: Colors.cyanAccent,
-      ),
+        brightness: Brightness.light,
+      ),home: Home(),
     ));
