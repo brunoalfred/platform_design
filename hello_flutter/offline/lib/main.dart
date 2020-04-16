@@ -8,5 +8,6 @@ void main() => runApp(
           accentColor: Colors.cyanAccent,
           brightness: Brightness.light,
         ),
+        initialRoute: '/',routes: <String, WidgetBuilder>{},
       ),
     );
