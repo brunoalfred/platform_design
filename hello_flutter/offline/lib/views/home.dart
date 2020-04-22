@@ -27,9 +27,15 @@ class _HomeState extends State<Home> {
           new ListTile(
             title: new Text("User One"),
             subtitle: new Text("Detail One"),
-            onTap: () => {},
+            onTap: () => {Navigator.pushNamed(context, '/user')},
           ),
-          new ListTile()
+          new ListTile(
+            title: new Text("User Two"),
+            subtitle: new Text("Detail Two"),
+            onTap: () => {
+              () => {Navigator.pushNamed(context, '/user')},
+            },
+          )
         ],
       ),
     );
