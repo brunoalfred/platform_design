@@ -25,7 +25,11 @@ class _HomeState extends State<Home> {
         body: new ListView.builder(
           itemCount: 5,
           itemBuilder: (context, index) {
-            return new Card();
+            return new Card(
+              child: ListTile(
+                leading: Icon(Icons.account_box),
+              ),
+            );
           },
         ));
   }
