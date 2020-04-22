@@ -28,6 +28,11 @@ class _HomeState extends State<Home> {
             return new Card(
               child: ListTile(
                 leading: Icon(Icons.account_box),
+                title: new Text('Box'),
+                trailing: Icon(Icons.keyboard_arrow_right),
+                onTap: () {
+                  Navigator.pushNamed(context, '/user');
+                },
               ),
             );
           },
