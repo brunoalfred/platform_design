@@ -29,6 +29,7 @@ class _HomeState extends State<Home> {
             subtitle: new Text("Detail One"),
             onTap: () => {},
           ),
+          new ListTile()
         ],
       ),
     );
