@@ -1,6 +1,3 @@
-// ignore: avoid_web_libraries_in_flutter
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -20,9 +17,19 @@ class _HomeState extends State<Home> {
         title: new Text(
           "My App",
           style: new TextStyle(
-            color: Colors.blue,
+            color: Colors.black,
           ),
         ),
+        centerTitle: true,
+      ),
+      body: new ListView(
+        children: <Widget>[
+          new ListTile(
+            title: new Text("User One"),
+            subtitle: new Text("Detail One"),
+            onTap: () => {},
+          ),
+        ],
       ),
     );
   }
