@@ -16,6 +16,6 @@ void main() => runApp(MaterialApp(
       routes: <String, WidgetBuilder>{
 //        Build the Home Screen,
         '/': (context) => Home(),
-        '/user': (context) => User(), '/user': (context) => User(),
+        '/user': (context) => User(),
       },
     ));
