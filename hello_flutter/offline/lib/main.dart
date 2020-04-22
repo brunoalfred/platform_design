@@ -8,5 +8,6 @@ void main() => runApp(MaterialApp(
       theme: ThemeData(
         accentColor: Colors.indigoAccent,
         brightness: Brightness.light,
-      ),home: Home(),
+      ),
+      home: Home(),
     ));
