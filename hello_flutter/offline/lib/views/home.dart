@@ -22,22 +22,7 @@ class _HomeState extends State<Home> {
         ),
         centerTitle: true,
       ),
-      body: new ListView(
-        children: <Widget>[
-          new ListTile(
-            title: new Text("User One"),
-            subtitle: new Text("Detail One"),
-            onTap: () => {Navigator.pushNamed(context, '/user')},
-          ),
-          new ListTile(
-            title: new Text("User Two"),
-            subtitle: new Text("Detail Two"),
-            onTap: () => {
-              () => {Navigator.pushNamed(context, '/user')},
-            },
-          )
-        ],
-      ),
+      body: new ListView.builder(itemBuilder:,)
     );
   }
 }
