@@ -4,7 +4,7 @@ import 'package:offline/views/home.dart';
 import 'package:offline/views/user_view.dart';
 
 void main() => runApp(MaterialApp(
-  title: 'Trying Navigation App With ListView',
+      title: 'Trying Navigation App With ListView',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         accentColor: Colors.indigoAccent,
@@ -16,6 +16,6 @@ void main() => runApp(MaterialApp(
       routes: <String, WidgetBuilder>{
 //        Build the Home Screen,
         '/': (context) => Home(),
-        '/user': (context) => User(),
+        '/user': (context) => User(), '/user': (context) => User(),
       },
     ));

@@ -21,6 +21,7 @@ class UserState extends State<User> {
           onPressed: () {
             Navigator.pop(context);
           },
+          child: new Text("Back 1"),
         ),
       ),
     );
