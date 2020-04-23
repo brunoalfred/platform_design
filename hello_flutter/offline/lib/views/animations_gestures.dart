@@ -11,6 +11,7 @@ class AnimationsGestures extends StatefulWidget {
 class _AnimationsGesturesState extends State<AnimationsGestures> {
   int numberTaps = 0;
   int numberDoubleTaps = 0;
+  int numberLongTaps = 0;
 
   @override
   Widget build(BuildContext context) {
