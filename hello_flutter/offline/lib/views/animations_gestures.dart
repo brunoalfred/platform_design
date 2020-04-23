@@ -16,6 +16,11 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return new Scaffold();
+    return new Scaffold(
+      appBar: AppBar(
+        title: new Text('Animations and Gestures'),
+      ),
+      bottomNavigationBar: Material(),
+    );
   }
 }
