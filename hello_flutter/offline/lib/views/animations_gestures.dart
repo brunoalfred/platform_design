@@ -51,4 +51,6 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
       ),
     );
   }
+
+  void center() {}
 }
