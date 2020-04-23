@@ -26,33 +26,35 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
     }
     // TODO: implement build
     return new Scaffold(
-      appBar: AppBar(
-        title: new Text('Animations and Gestures'),
-      ),
-      bottomNavigationBar: Material(
-        color: Theme.of(context).primaryColor,
-        child: Padding(
-          padding: EdgeInsets.all(15.0),
-          child: Text(
-            'Taps: $numberTaps - DoubleTaps: $numberDoubleTaps - Long Presses: $numberLongTaps',
+        appBar: AppBar(
+          title: new Text('Animations and Gestures'),
+        ),
+        bottomNavigationBar: Material(
+          color: Theme.of(context).primaryColor,
+          child: Padding(
+            padding: EdgeInsets.all(15.0),
+            child: Text(
+              'Taps: $numberTaps - DoubleTaps: $numberDoubleTaps - Long Presses: $numberLongTaps',
 //             TODO: Implement the style
-            style: TextStyle(),
+              style: TextStyle(),
+            ),
           ),
         ),
-      ),
-      body: Stack(
-        children: <Widget>[
-          Positioned(
-              left: xPosition,
-              top: yPosition,
-              child: Container(
-                width: boxSize,
-                height: boxSize,
-                decoration: BoxDecoration(color: Colors.indigoAccent),
-              ))
-        ],
-      ),
-    );
+        body: GestureDetector(
+          child: Stack(
+            children: <Widget>[
+              Positioned(
+                left: xPosition,
+                top: yPosition,
+                child: Container(
+                  width: boxSize,
+                  height: boxSize,
+                  decoration: BoxDecoration(color: Colors.indigoAccent),
+                ),
+              )
+            ],
+          ),
+        ));
   }
 
   void center(BuildContext context) {
