@@ -46,6 +46,11 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
               numberTaps++;
             });
           },
+          onDoubleTap: () {
+            setState(() {
+              numberDoubleTaps++;
+            });
+          },
           child: Stack(
             children: <Widget>[
               Positioned(
