@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AnimationsGestures extends StatefulWidget {
@@ -22,6 +23,11 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
       ),
       bottomNavigationBar: Material(
         color: Theme.of(context).primaryColor,
+        child: Padding(
+          padding: EdgeInsets.all(15.0),
+          child: Text(
+              'Taps: $numberTaps - DoubleTaps: $numberDoubleTaps - Long Presses: $numberLongTaps'),
+        ),
       ),
     );
   }
