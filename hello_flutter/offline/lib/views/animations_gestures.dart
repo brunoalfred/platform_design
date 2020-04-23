@@ -37,6 +37,7 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
           ),
         ),
       ),
+      body: Stack(),
     );
   }
 }
