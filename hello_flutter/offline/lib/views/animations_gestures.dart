@@ -56,6 +56,14 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
               numberLongTaps++;
             });
           },
+
+//          on the vertical dragging of the box
+          onVerticalDragUpdate: (DragUpdateDetails value) {
+            setState(() {
+              double delta = value.delta.dy;
+              yPosition += delta;
+            });
+          },
           child: Stack(
             children: <Widget>[
               Positioned(
