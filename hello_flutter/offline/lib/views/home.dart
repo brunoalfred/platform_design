@@ -17,7 +17,7 @@ class _HomeState extends State<Home> {
           title: new Text(
             "My App",
             style: new TextStyle(
-              color: Colors.black,
+              color: Colors.blue,
             ),
           ),
           centerTitle: true,
