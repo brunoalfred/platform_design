@@ -52,5 +52,8 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
     );
   }
 
-  void center() {}
+  void center() {
+    x_position = (MediaQuery.of(context).size.width / 2) - boxSize / 2;
+    y_position = (MediaQuery.of(context).size.height / 2) - boxSize / 2 - 30.0;
+  }
 }
