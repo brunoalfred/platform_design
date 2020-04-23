@@ -20,7 +20,9 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
       appBar: AppBar(
         title: new Text('Animations and Gestures'),
       ),
-      bottomNavigationBar: Material(),
+      bottomNavigationBar: Material(
+        color: Theme.of(context).primaryColor,
+      ),
     );
   }
 }
