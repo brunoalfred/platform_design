@@ -26,7 +26,9 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
         child: Padding(
           padding: EdgeInsets.all(15.0),
           child: Text(
-              'Taps: $numberTaps - DoubleTaps: $numberDoubleTaps - Long Presses: $numberLongTaps'),
+            'Taps: $numberTaps - DoubleTaps: $numberDoubleTaps - Long Presses: $numberLongTaps',
+            style: TextStyle(),
+          ),
         ),
       ),
     );
