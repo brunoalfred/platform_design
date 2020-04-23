@@ -15,8 +15,8 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
   int numberLongTaps = 0;
 
 //  positions of the stack layout
-  double x_position = 0.0;
-  double y_position = 0.0;
+  double xPosition = 0.0;
+  double yPosition = 0.0;
   double boxSize = 150.0;
 
   @override
@@ -40,8 +40,8 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
       body: Stack(
         children: <Widget>[
           Positioned(
-              left: x_position,
-              top: y_position,
+              left: xPosition,
+              top: yPosition,
               child: Container(
                 width: boxSize,
                 height: boxSize,
@@ -53,8 +53,8 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
   }
 
   void center() {
-    x_position = (MediaQuery.of(context).size.width / 2) - boxSize / 2;
-    y_position = (MediaQuery.of(context).size.height / 2) - boxSize / 2 - 30.0;
+    xPosition = (MediaQuery.of(context).size.width / 2) - boxSize / 2;
+    yPosition = (MediaQuery.of(context).size.height / 2) - boxSize / 2 - 30.0;
     setState(() {});
   }
 }
