@@ -14,6 +14,11 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
   int numberDoubleTaps = 0;
   int numberLongTaps = 0;
 
+//  positions of the stack layout
+  double x_position = 0.0;
+  double y_position = 0.0;
+  double boxSize = 150.0;
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -27,6 +32,7 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
           padding: EdgeInsets.all(15.0),
           child: Text(
             'Taps: $numberTaps - DoubleTaps: $numberDoubleTaps - Long Presses: $numberLongTaps',
+//             TODO: Implement the style
             style: TextStyle(),
           ),
         ),
