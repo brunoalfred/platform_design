@@ -51,6 +51,11 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
               numberDoubleTaps++;
             });
           },
+          onLongPress: () {
+            setState(() {
+              numberLongTaps++;
+            });
+          },
           child: Stack(
             children: <Widget>[
               Positioned(
