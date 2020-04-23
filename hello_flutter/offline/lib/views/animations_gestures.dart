@@ -37,7 +37,15 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
           ),
         ),
       ),
-      body: Stack(),
+      body: Stack(
+        children: <Widget>[
+          Positioned(
+              child: Container(
+            width: boxSize,
+            height: boxSize,
+          ))
+        ],
+      ),
     );
   }
 }
