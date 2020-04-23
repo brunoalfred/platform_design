@@ -43,6 +43,7 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
               child: Container(
             width: boxSize,
             height: boxSize,
+            decoration: BoxDecoration(color: Colors.indigoAccent),
           ))
         ],
       ),
