@@ -15,6 +15,7 @@ class UserState extends State<User> {
     return Scaffold(
       appBar: AppBar(
         title: new Text("User"),
+        centerTitle: true,
       ),
       body: new Center(
         child: RaisedButton(
