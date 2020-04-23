@@ -40,11 +40,13 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
       body: Stack(
         children: <Widget>[
           Positioned(
+              left: x_position,
+              top: y_position,
               child: Container(
-            width: boxSize,
-            height: boxSize,
-            decoration: BoxDecoration(color: Colors.indigoAccent),
-          ))
+                width: boxSize,
+                height: boxSize,
+                decoration: BoxDecoration(color: Colors.indigoAccent),
+              ))
         ],
       ),
     );
