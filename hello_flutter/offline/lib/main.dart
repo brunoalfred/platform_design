@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:offline/views/animations_gestures.dart';
+import 'package:offline/views/gestures.dart';
 import 'package:offline/views/home.dart';
 import 'package:offline/views/user_view.dart';
 
