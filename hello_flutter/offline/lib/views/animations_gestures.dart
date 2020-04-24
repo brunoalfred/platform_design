@@ -26,58 +26,59 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
     }
     // TODO: implement build
     return new Scaffold(
-        appBar: AppBar(
-          title: new Text('Animations and Gestures'),
-        ),
-        bottomNavigationBar: Material(
-          color: Theme.of(context).primaryColor,
-          child: Padding(
-            padding: EdgeInsets.all(15.0),
-            child: Text(
-              'Taps: $numberTaps - DoubleTaps: $numberDoubleTaps - Long Presses: $numberLongTaps',
+      appBar: AppBar(
+        title: new Text('Animations and Gestures'),
+      ),
+      bottomNavigationBar: Material(
+        color: Theme.of(context).primaryColor,
+        child: Padding(
+          padding: EdgeInsets.all(15.0),
+          child: Text(
+            'Taps: $numberTaps - DoubleTaps: $numberDoubleTaps - Long Presses: $numberLongTaps',
 //             TODO: Implement the style
-              style: TextStyle(),
-            ),
+            style: TextStyle(),
           ),
         ),
-        body: GestureDetector(
-          onTap: () {
-            setState(() {
-              numberTaps++;
-            });
-          },
-          onDoubleTap: () {
-            setState(() {
-              numberDoubleTaps++;
-            });
-          },
-          onLongPress: () {
-            setState(() {
-              numberLongTaps++;
-            });
-          },
+      ),
+      body: GestureDetector(
+        onTap: () {
+          setState(() {
+            numberTaps++;
+          });
+        },
+        onDoubleTap: () {
+          setState(() {
+            numberDoubleTaps++;
+          });
+        },
+        onLongPress: () {
+          setState(() {
+            numberLongTaps++;
+          });
+        },
 
 //          on the vertical dragging of the box
-          onVerticalDragUpdate: (DragUpdateDetails value) {
-            setState(() {
-              double delta = value.delta.dy;
-              yPosition += delta;
-            });
-          },
-          child: Stack(
-            children: <Widget>[
-              Positioned(
-                left: xPosition,
-                top: yPosition,
-                child: Container(
-                  width: boxSize,
-                  height: boxSize,
-                  decoration: BoxDecoration(color: Colors.indigoAccent),
-                ),
-              )
-            ],
-          ),
-        ));
+        onVerticalDragUpdate: (DragUpdateDetails value) {
+          setState(() {
+            double delta = value.delta.dy;
+            yPosition += delta;
+          });
+        },
+        child: Stack(
+          children: <Widget>[
+            Positioned(
+              left: xPosition,
+              top: yPosition,
+              child: Container(
+                width: boxSize,
+                height: boxSize,
+                decoration: BoxDecoration(color: Colors.indigoAccent),
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 
   void center(BuildContext context) {
