@@ -12,7 +12,6 @@ class myGesture extends StatefulWidget {
 
 // ignore: camel_case_types
 class myGestureState extends State<myGesture> {
-
 //  position of the box
   double xPosition = 0.0;
   double yPosition = 0.0;
@@ -40,8 +39,9 @@ class myGestureState extends State<myGesture> {
       body: GestureDetector(
         child: new Stack(
           children: <Widget>[
-        Positioned(
-        left: x-
+            Positioned(
+              left: xPosition,
+              top: yPosition,
               child: Container(
                 width: boxSize,
                 height: boxSize,
