@@ -5,6 +5,11 @@ class Todo {
   String _date;
   String _priority;
 
+
+  // * creating constructor for the class Todo
   Todo(this._title, this._priority, this._date, [this._description]);
   Todo.withId(this._id, this._title, this._priority, this._date, [this._description]);
+
+
+
 }
