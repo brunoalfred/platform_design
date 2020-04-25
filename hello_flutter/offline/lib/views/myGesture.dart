@@ -23,6 +23,10 @@ class myGestureState extends State<myGesture> {
 
   @override
   Widget build(BuildContext context) {
+    if (xPosition == 0) {
+      center(context);
+    }
+
     // TODO: implement build
     return new Scaffold(
       appBar: new AppBar(
