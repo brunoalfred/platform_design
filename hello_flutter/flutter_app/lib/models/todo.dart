@@ -33,4 +33,14 @@ class Todo {
       _description = newDescription;
     }
   }
+
+
+// checking if pririties have lenght of greater than 0 and 
+// less or equal to three.
+
+  set priority(int newPriority){
+    if (newPriority >0 && newPriority <= 3){
+      priority = newPriority;
+    }
+  }
 }
