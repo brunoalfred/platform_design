@@ -18,6 +18,7 @@ class myGestureState extends State<myGesture> {
       appBar: new AppBar(
         title: new Text('Some more Gestures'),
       ),
+      bottomNavigationBar: Material(),
     );
   }
 }
