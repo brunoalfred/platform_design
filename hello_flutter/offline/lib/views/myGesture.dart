@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class myGesture extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -8,10 +9,15 @@ class myGesture extends StatefulWidget {
   }
 }
 
+// ignore: camel_case_types
 class myGestureState extends State<myGesture> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return new Scaffold();
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text('Some more Gestures'),
+      ),
+    );
   }
 }
