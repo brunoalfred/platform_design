@@ -14,6 +14,7 @@ void main() => runApp(
           brightness: Brightness.light,
         ),
 //      home: Home(),
+
 //  The first Route an individual takes
         initialRoute: '/',
         routes: <String, WidgetBuilder>{
