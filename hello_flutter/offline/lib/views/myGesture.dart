@@ -14,7 +14,7 @@ class myGesture extends StatefulWidget {
 class myGestureState extends State<myGesture> {
   int tapsNumber = 0;
 
-  int boxSize = 100;
+  double boxSize = 100;
 
   @override
   Widget build(BuildContext context) {
