@@ -3,7 +3,7 @@ class Todo {
   String _title;
   String _description;
   String _date;
-  String _priority;
+  int _priority;
 
   // * creating constructor for the class Todo
   Todo(this._title, this._priority, this._date, [this._description]);
@@ -15,7 +15,7 @@ class Todo {
   String get title => _title;
   String get description => _description;
   String get date => _date;
-  String get priority => _priority;
+  int get priority => _priority;
 
 // * creating  setter for our class
 
@@ -47,6 +47,7 @@ class Todo {
   // creating key:value pair of our data
   Map<String, dynamic> toMap(){
     var map = Map<String, dynamic>();
-    
+    map['title'] = _title;
+    map['']
   } 
 }
