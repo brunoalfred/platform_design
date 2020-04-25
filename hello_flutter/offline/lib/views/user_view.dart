@@ -21,7 +21,9 @@ class UserState extends State<User> {
         child: new Column(
           children: <Widget>[
             new RaisedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
             )
           ],
         ),
