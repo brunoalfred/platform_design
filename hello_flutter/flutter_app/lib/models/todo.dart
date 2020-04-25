@@ -24,6 +24,14 @@ set title(String newTitle){
  if (newTitle.length <= 255){
     _title = newTitle;
  }
+
+
+// checking if the lenght of the Description to be less than 255
+ set description(String newDescription){
+   if(newDescription.length <= 255){
+     _description = newDescription;
+   }
+ }
 }
 
 }
