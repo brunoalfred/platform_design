@@ -12,6 +12,11 @@ class myGesture extends StatefulWidget {
 
 // ignore: camel_case_types
 class myGestureState extends State<myGesture> {
+
+//  position of the box
+  double x-cordinate = 0.0;
+  double y-cordinate = 0.0;
+
   int tapsNumber = 0;
 
   double boxSize = 100;
@@ -36,10 +41,13 @@ class myGestureState extends State<myGesture> {
         child: new Stack(
           children: <Widget>[
             Positioned(
+
               child: Container(
                 width: boxSize,
                 height: boxSize,
-                decoration: BoxDecoration(color: Colors.blue),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
               ),
             )
           ],
