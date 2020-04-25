@@ -18,12 +18,7 @@ class UserState extends State<User> {
         centerTitle: true,
       ),
       body: new Center(
-        child: RaisedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: new Text("Back 1"),
-        ),
+        child: new Column(),
       ),
     );
   }
