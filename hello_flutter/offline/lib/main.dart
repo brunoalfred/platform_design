@@ -21,7 +21,7 @@ void main() => runApp(
           '/': (context) => Home(),
           '/user': (context) => User(),
           '/gestures': (context) => AnimationsGestures(),
-          'myGesture': (context) => myGesture(),
+          '/myGesture': (context) => myGesture(),
         },
       ),
     );
