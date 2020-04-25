@@ -30,7 +30,9 @@ class myGestureState extends State<myGesture> {
           ),
         ),
       ),
-      body: GestureDetector(),
+      body: GestureDetector(
+        child: new Stack(),
+      ),
     );
   }
 }
