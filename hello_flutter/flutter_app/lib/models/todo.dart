@@ -48,6 +48,12 @@ class Todo {
   Map<String, dynamic> toMap(){
     var map = Map<String, dynamic>();
     map['title'] = _title;
-    map['']
+    map['description'] = _description;
+    map['date'] = _date;
+    map['priority'] = _priority;
+    if(_id != null){
+      map['id'] = _id;
+    }
+    return map;
   } 
 }
