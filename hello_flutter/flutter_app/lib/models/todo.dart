@@ -20,18 +20,17 @@ class Todo {
 // * creating  setter for our class
 
 // checking if the lenght of the title to be less than 255
-set title(String newTitle){
- if (newTitle.length <= 255){
-    _title = newTitle;
- }
-
+  set title(String newTitle) {
+    if (newTitle.length <= 255) {
+      _title = newTitle;
+    }
+  }
 
 // checking if the lenght of the Description to be less than 255
- set description(String newDescription){
-   if(newDescription.length <= 255){
-     _description = newDescription;
-   }
- }
-}
 
+  set description(String newDescription) {
+    if (newDescription.length <= 255) {
+      _description = newDescription;
+    }
+  }
 }
