@@ -14,7 +14,6 @@ class myGesture extends StatefulWidget {
 class myGestureState extends State<myGesture> {
   int tapsNumber = 0;
 
-
   int boxSize = 100;
 
   @override
@@ -25,9 +24,7 @@ class myGestureState extends State<myGesture> {
         title: new Text('Some more Gestures'),
       ),
       bottomNavigationBar: Material(
-        color: Theme
-            .of(context)
-            .primaryColor,
+        color: Theme.of(context).primaryColor,
         child: Padding(
           padding: EdgeInsets.all(20.0),
           child: new Text(
@@ -39,7 +36,10 @@ class myGestureState extends State<myGesture> {
         child: new Stack(
           children: <Widget>[
             Positioned(
-              child: Container(width:,),
+              child: Container(
+                width: boxSize,
+                height: boxSize,
+              ),
             )
           ],
         ),
