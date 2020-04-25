@@ -39,6 +39,7 @@ class myGestureState extends State<myGesture> {
               child: Container(
                 width: boxSize,
                 height: boxSize,
+                decoration: BoxDecoration(color: Colors.blue),
               ),
             )
           ],
