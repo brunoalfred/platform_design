@@ -56,4 +56,15 @@ class Todo {
     }
     return map;
   } 
+
+
+  // named constructor
+  Todo.fromObject(dynamic o){
+    this._id = o['id'];
+    this._date = o['date'];
+    this._title = o['title'];
+    this._description = o['description'];
+    this._priority = o['priority'];
+    
+  }
 }
