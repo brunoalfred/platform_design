@@ -18,7 +18,13 @@ class UserState extends State<User> {
         centerTitle: true,
       ),
       body: new Center(
-        child: new Column(),
+        child: new Column(
+          children: <Widget>[
+            new RaisedButton(
+              onPressed: () {},
+            )
+          ],
+        ),
       ),
     );
   }
