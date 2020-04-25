@@ -27,7 +27,7 @@ class UserState extends State<User> {
               child: new Text('Back'),
             ),
             new RaisedButton(onPressed: () {
-              Navigator.pushNamed(context, '/myGestures');
+              Navigator.pushNamed(context, '/myGesture');
             })
           ],
         ),
