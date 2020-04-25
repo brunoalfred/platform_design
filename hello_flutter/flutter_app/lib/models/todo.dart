@@ -43,4 +43,10 @@ class Todo {
       priority = newPriority;
     }
   }
+
+  // creating key:value pair of our data
+  Map<String, dynamic> toMap(){
+    var map = Map<String, dynamic>();
+    
+  } 
 }
