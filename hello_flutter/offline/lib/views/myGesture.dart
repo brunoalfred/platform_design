@@ -25,9 +25,12 @@ class myGestureState extends State<myGesture> {
         color: Theme.of(context).primaryColor,
         child: Padding(
           padding: EdgeInsets.all(20.0),
-          child: new Text('Taps: $tapsNumber'),
+          child: new Text(
+            'Taps: $tapsNumber',
+          ),
         ),
       ),
+      body: GestureDetector(),
     );
   }
 }
