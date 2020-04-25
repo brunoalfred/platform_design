@@ -32,7 +32,11 @@ class myGestureState extends State<myGesture> {
       ),
       body: GestureDetector(
         child: new Stack(
-          children: <Widget>[],
+          children: <Widget>[
+            Positioned(
+              child: Container(),
+            )
+          ],
         ),
       ),
     );
