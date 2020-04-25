@@ -74,7 +74,7 @@ class _AnimationsGesturesState extends State<AnimationsGestures> {
                 height: boxSize,
                 decoration: BoxDecoration(color: Colors.indigoAccent),
               ),
-            )
+            ),
           ],
         ),
       ),
