@@ -15,12 +15,11 @@ class myGestureState extends State<myGesture> {
 //  position of the box
   double xPosition = 0.0;
   double yPosition = 0.0;
+  double boxSize = 100;
 
   int tapsNumber = 0;
   int doubleTapsNumber = 0;
   int longPressNumber = 0;
-
-  double boxSize = 100;
 
   @override
   Widget build(BuildContext context) {
