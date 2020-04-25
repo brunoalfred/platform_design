@@ -56,4 +56,13 @@ class myGestureState extends State<myGesture> {
       ),
     );
   }
+
+  void center(BuildContext context) {
+    xPosition = (MediaQuery.of(context).size.width / 2) - boxSize / 2;
+    yPosition = (MediaQuery.of(context).size.height / 2) - boxSize / 2 - 30.0;
+    setState(() {
+      xPosition = xPosition;
+      yPosition = yPosition;
+    });
+  }
 }
