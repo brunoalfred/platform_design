@@ -7,3 +7,11 @@ class myGesture extends StatefulWidget {
     return myGestureState();
   }
 }
+
+class myGestureState extends State<myGesture> {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new Scaffold();
+  }
+}
