@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
@@ -11,6 +12,8 @@ class myGesture extends StatefulWidget {
 
 // ignore: camel_case_types
 class myGestureState extends State<myGesture> {
+  int tapsNumber = 0;
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -20,6 +23,10 @@ class myGestureState extends State<myGesture> {
       ),
       bottomNavigationBar: Material(
         color: Theme.of(context).primaryColor,
+        child: Padding(
+          padding: EdgeInsets.all(20.0),
+          child: new Text('Taps: $tapsNumber'),
+        ),
       ),
     );
   }
