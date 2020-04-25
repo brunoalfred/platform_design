@@ -53,7 +53,7 @@ class myGestureState extends State<myGesture> {
                   color: Colors.blue,
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
