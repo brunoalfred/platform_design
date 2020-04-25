@@ -5,17 +5,25 @@ class Todo {
   String _date;
   String _priority;
 
-
   // * creating constructor for the class Todo
   Todo(this._title, this._priority, this._date, [this._description]);
-  Todo.withId(this._id, this._title, this._priority, this._date, [this._description]);
+  Todo.withId(this._id, this._title, this._priority, this._date,
+      [this._description]);
 
 // * creating the getters for our class
-   int get id => _id;
-   String get title => _title;
-   String get description => _description;
-   String get date => _date;
-   String get priority => _priority;
+  int get id => _id;
+  String get title => _title;
+  String get description => _description;
+  String get date => _date;
+  String get priority => _priority;
 
+// * creating  setter for our class
+
+// checking if the lenght of the title to be less than 255
+set title(String newTitle){
+ if (newTitle.length <= 255){
+    _title = newTitle;
+ }
+}
 
 }
