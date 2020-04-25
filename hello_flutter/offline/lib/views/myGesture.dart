@@ -17,6 +17,8 @@ class myGestureState extends State<myGesture> {
   double yPosition = 0.0;
 
   int tapsNumber = 0;
+  int doubleTapsNumber = 0;
+  int longPressNumber = 0;
 
   double boxSize = 100;
 
