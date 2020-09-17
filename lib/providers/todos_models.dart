@@ -2,11 +2,15 @@ import 'dart:collection';
 
 import 'package:flutter/material.dart';
 
-import 'package:flutter/models/task.dart';
+import 'package:Todo-App/models/task.dart';
 import 'package:help/models/tasks.dart';
 
 class TodoModels extends ChangeNotifier {
-  final List<Task> _tasks = [];
+  final List<Task> _tasks = [
+    Task(title: 'Finish the app'),
+    Task(title: 'Write a blog post'),
+    Task(title: 'Share with community'),
+  ];
 
   UnimodifiableListView<Task> get allTasks => UnmodifiableListView(_tasks);
 
