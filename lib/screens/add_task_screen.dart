@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:todos/providers/todos_model.dart';
-import 'package:todos/models/task.dart';
+import 'package:help/providers/todos_models.dart';
+import 'package:help/models/tasks.dart';
 
 class AddTaskScreen extends StatefulWidget {
   @override
@@ -25,7 +25,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
     if (textVal.isNotEmpty) {
       final Task todo = Task(
         title: textVal,
-        completed: completed,
+        complete: completed,
       );
       Provider.of<TodosModel>(context, listen: false).addTodo(todo);
       Navigator.pop(context);

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../Todo-App/tabs/all_tasks.dart';
-import 'package:todos/tabs/completed_tasks.dart';
-import 'package:todos/tabs/incomplete_tasks.dart';
+import 'package:help/tabs/all_tasks.dart';
+import 'package:help/tabs/completed_tasks.dart';
+import 'package:help/tabs/incomplete_tasks.dart';
+
+import 'add_task_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
