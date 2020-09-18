@@ -2,18 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:help/providers/todos_models.dart';
 import 'package:provider/provider.dart';
 
-import 'package:flutter/models/tasks.dart';
-import 'package:flutter/providers/tasks_list_item.dart';
+import 'package:help/models/tasks.dart';
 
 class TaskListItem extends StatelessWidget {
+final Task task;
+
+TaskListItem({@required this.task});
+
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+    var task;
     return ListTile(
       leading: Checkbox(
         value: task.completed,
         onChanged: (bool checked)
-            {Provider.of<TodoModels>(context, listen: false).deleteTodo(task)},
+            {Provider.of<TodosModel>(context, listen: false).deleteTodo(task);},
       ),
       title: Text(task.title),
       trailing: IconButton(
@@ -22,7 +27,7 @@ class TaskListItem extends StatelessWidget {
             color: Colors.red,
           ),
           onPressed: () {
-            Provider.of<TodoModels>(context, listen:  false).deleteTodo(task)
+            Provider.of<TodosModel>(context, listen:  false).deleteTodo(task);
           }),
     );
   }
