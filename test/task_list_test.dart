@@ -7,13 +7,17 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:help/models/tasks.dart';
 import 'package:help/widgets/task_list.dart';
 
 void main() {
 
   testWidgets('My widget Has a List of Tasks',  (WidgetTester tester  ) async {
 
-    final ListViewWidget = TaskList(tasks: null);
+    List<Task> task = ['cook', 'eat'];
+
+    // ignore: non_constant_identifier_names
+    final ListViewWidget = TaskList(tasks: task);
 
     await tester.pumpWidget(Container(child: ListViewWidget,));
 
