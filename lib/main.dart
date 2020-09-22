@@ -12,6 +12,7 @@ class TodosApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (BuildContext context) {TodosModel()  ;},
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Todos',
         theme: ThemeData.dark(),
         home: HomeScreen(),
