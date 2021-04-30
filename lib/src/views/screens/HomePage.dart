@@ -41,7 +41,23 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       tabBuilder: (contex, index) {
-        
+        switch (index) {
+          case 0: return CupertinoTabView(
+            defaultTitle: SongsTab.title,
+            builder: (context) => SongsTab(key: songsTabKey),
+          );
+          case 1: return CupertinoTabView(
+            defaultTitle: NewsTab.title,
+             builder: (context) => NewsTab(),
+          );
+          case 2: return CupertinoTabView(
+            defaultTitle: ProfileTab.title,
+            builder: (context) => ProfileTab(),
+          );
+          default: 
+            assert(false, 'Unexpected tab');
+            return SizedBox.shrink();
+        }
       },
     );
   }
