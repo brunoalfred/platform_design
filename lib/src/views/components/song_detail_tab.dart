@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:platform_design/src/views/components/widgets.dart';
 import 'package:platform_design/src/views/wigdets/hero_animating_song_card.dart';
 import 'package:platform_design/src/views/wigdets/song_placeholder_tile.dart';
 
@@ -35,7 +36,7 @@ class SongDetailTab extends StatelessWidget {
               );
             },
           ),
-           Divider(
+          Divider(
             height: 0,
             color: Colors.grey,
           ),
@@ -61,14 +62,35 @@ class SongDetailTab extends StatelessWidget {
               },
             ),
           ),
-          
         ],
       ),
     );
   }
 
+  Widget _buildIos(BuildContext context) {
+    return CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar(
+        middle: Text(song),
+        previousPageTitle: 'Songs',
+      ),
+      child: _buildBody(),
+    );
+  }
+
+  Widget _buildAndroid(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(song),
+      ),
+      body: _buildBody(),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return PlatformWidget(
+      androidBuilder: _buildAndroid,
+      iosBuilder: _buildIos,
+    );
   }
 }
