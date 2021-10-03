@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:platform_design/src/views/components/widgets.dart';
+import 'package:flutter/material.dart';
 import 'package:platform_design/src/views/components/settings_tab.dart';
-import 'package:platform_design/src/views/wigdets/preference_card.dart';
+import 'package:platform_design/src/views/components/widgets.dart';
 import 'package:platform_design/src/views/wigdets/log_out_button.dart';
+import 'package:platform_design/src/views/wigdets/preference_card.dart';
 
 class ProfileTab extends StatelessWidget {
   static const title = 'Profile';

@@ -5,12 +5,11 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-
 import 'package:flutter_test/flutter_test.dart';
 import 'package:platform_design/src/app.dart';
 
 void main() {
-  testWidgets('Home Widget Build Test', (WidgetTester tester) async {
+  testWidgets('Home Widget Build Test', (tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyAdaptingApp());
   });

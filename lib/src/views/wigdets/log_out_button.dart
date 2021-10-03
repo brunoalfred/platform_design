@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:platform_design/src/views/components/widgets.dart';
-
 
 class LogOutButton extends StatelessWidget {
   static const _logoutMessage = Text(

@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:platform_design/src/utils.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_lorem/flutter_lorem.dart';
+import 'package:platform_design/src/utils.dart';
 import 'package:platform_design/src/views/components/widgets.dart';
 
 class NewsTab extends StatefulWidget {

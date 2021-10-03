@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:platform_design/src/views/components/songs_tab.dart';
-import 'package:platform_design/src/views/components/widgets.dart';
 import 'package:platform_design/src/views/components/news_tab.dart';
 import 'package:platform_design/src/views/components/profile_tab.dart';
 import 'package:platform_design/src/views/components/settings_tab.dart';
+import 'package:platform_design/src/views/components/songs_tab.dart';
+import 'package:platform_design/src/views/components/widgets.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -122,15 +122,15 @@ class _AndroidDrawer extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Divider(),
             ),
-             ListTile(
-            leading: SettingsTab.androidIcon,
-            title: Text(SettingsTab.title),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push<void>(context,
-                  MaterialPageRoute(builder: (context) => SettingsTab()));
-            },
-          ),
+            ListTile(
+              leading: SettingsTab.androidIcon,
+              title: Text(SettingsTab.title),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push<void>(context,
+                    MaterialPageRoute(builder: (context) => SettingsTab()));
+              },
+            ),
           ]),
     );
   }

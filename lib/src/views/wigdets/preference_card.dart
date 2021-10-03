@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:platform_design/src/views/wigdets/pressable_card.dart';
+import 'package:flutter/material.dart';
 import 'package:platform_design/src/views/components/widgets.dart';
+import 'package:platform_design/src/views/wigdets/pressable_card.dart';
 
 class PreferenceCard extends StatelessWidget {
   const PreferenceCard({
@@ -55,10 +55,9 @@ class PreferenceCard extends StatelessWidget {
           ),
         ],
       ),
-      onPressed: (){
-         showChoices(context, preferenceChoices);
+      onPressed: () {
+        showChoices(context, preferenceChoices);
       },
     );
-
   }
 }

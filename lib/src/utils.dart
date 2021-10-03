@@ -5,7 +5,7 @@ import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 
 const _myListOfRandomColors = [
-   Colors.red,
+  Colors.red,
   Colors.blue,
   Colors.teal,
   Colors.yellow,
@@ -18,11 +18,9 @@ const _myListOfRandomColors = [
   Colors.orange,
 ];
 
-
 final _random = Random();
 
 final wordPairIterator = generateWordPairs();
-
 
 String generateRandomHeadline() {
   final artist = capitalizePair(wordPairIterator.first);
@@ -54,8 +52,6 @@ String generateRandomHeadline() {
   return 'Failed to generate news headline';
 }
 
-
-
 List<MaterialColor> getRandomColors(int amount) {
   return List<MaterialColor>.generate(amount, (index) {
     return _myListOfRandomColors[_random.nextInt(_myListOfRandomColors.length)];
@@ -68,7 +64,6 @@ List<String> getRandomNames(int amount) {
       .map((pair) => capitalizePair(pair))
       .toList();
 }
-
 
 String capitalize(String word) {
   return '${word[0].toUpperCase()}${word.substring(1).toLowerCase()}';

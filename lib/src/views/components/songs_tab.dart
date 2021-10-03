@@ -1,11 +1,10 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:platform_design/src/utils.dart';
-import 'package:platform_design/src/views/wigdets/hero_animating_song_card.dart';
-import 'package:platform_design/src/views/components/widgets.dart';
 import 'package:platform_design/src/views/components/song_detail_tab.dart';
-
+import 'package:platform_design/src/views/components/widgets.dart';
+import 'package:platform_design/src/views/wigdets/hero_animating_song_card.dart';
 
 class SongsTab extends StatefulWidget {
   static const title = 'Songs';
@@ -28,12 +27,11 @@ class _SongsTabState extends State<SongsTab> {
   late List<MaterialColor> colors;
   late List<String> songNames;
 
-   @override
+  @override
   void initState() {
     _setData();
     super.initState();
   }
-
 
   void _setData() {
     colors = getRandomColors(_itemsLength);
@@ -47,7 +45,6 @@ class _SongsTabState extends State<SongsTab> {
       () => setState(() => _setData()),
     );
   }
-
 
   Widget _listBuilder(BuildContext context, int index) {
     if (index >= _itemsLength) return Container();
@@ -81,7 +78,7 @@ class _SongsTabState extends State<SongsTab> {
     );
   }
 
-   void _togglePlatform() {
+  void _togglePlatform() {
     TargetPlatform _getOppositePlatform() {
       if (defaultTargetPlatform == TargetPlatform.iOS) {
         return TargetPlatform.android;
@@ -98,9 +95,7 @@ class _SongsTabState extends State<SongsTab> {
     WidgetsBinding.instance!.reassembleApplication();
   }
 
-
-
-    Widget _buildAndroid(BuildContext context) {
+  Widget _buildAndroid(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(SongsTab.title),
@@ -128,8 +123,6 @@ class _SongsTabState extends State<SongsTab> {
       ),
     );
   }
-
-
 
   Widget _buildIos(BuildContext context) {
     return CustomScrollView(
@@ -163,8 +156,8 @@ class _SongsTabState extends State<SongsTab> {
   @override
   Widget build(BuildContext context) {
     return PlatformWidget(
-androidBuilder: _buildAndroid,
+      androidBuilder: _buildAndroid,
       iosBuilder: _buildIos,
-    ) ;
+    );
   }
 }
